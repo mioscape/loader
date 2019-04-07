@@ -46,9 +46,9 @@ TG = gg.makeRequest("https://raw.githubusercontent.com/Taiyouscape/TaiyouProject
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()
-else﻿
+else
 pcall(load(TG))
-end﻿
+end
 os.exit()
 
 ::jrs::
@@ -56,9 +56,9 @@ TG = gg.makeRequest("https://raw.githubusercontent.com/Taiyouscape/TaiyouProject
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()
-else﻿
+else
 pcall(load(TG))
-end﻿
+end
 os.exit()
 
 ::imb::
@@ -66,9 +66,9 @@ TG = gg.makeRequest("https://raw.githubusercontent.com/Taiyouscape/TaiyouProject
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()
-else﻿
+else
 pcall(load(TG))
-end﻿
+end
 os.exit()
 
 ::jrb::
@@ -76,9 +76,9 @@ TG = gg.makeRequest("https://raw.githubusercontent.com/Taiyouscape/TaiyouProject
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()
-else﻿
+else
 pcall(load(TG))
-end﻿
+end
 os.exit()
 
 -- Changelog --
@@ -87,6 +87,5 @@ gg.alert('Taiyou Project Script v1.2stable0504190931\n\n- Reworked some Value!')
 os.exit()
 
 ::cb::
-gg.alert('Taiyou Project Script v1.3beta0704191109\nUNSTABLE VERSION‼️\n\n- Fix some value\n- Added new algorithm for faster scanning")
+gg.alert('Taiyou Project Script v1.3beta0704191109\nUNSTABLE VERSION‼️\n\n- Fix some value\n- Added new algorithm for faster scanning')
 os.exit()
-  

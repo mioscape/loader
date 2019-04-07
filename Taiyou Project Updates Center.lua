@@ -1,6 +1,6 @@
 -- Taiyouscape --
 -- Menu --
-goto a
+goto s
 
 ::s::
 menu = gg.choice ({'[✔️]Ｓｔａｂｌｅ','[☢️]Ｂｅｔａ'}, nill, "Taiyou Project Updates Center v1.1")

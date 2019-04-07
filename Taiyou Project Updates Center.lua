@@ -1,6 +1,7 @@
 -- Taiyouscape --
-goto s
 -- Menu --
+goto a
+
 ::s::
 menu = gg.choice ({'[✔️]Ｓｔａｂｌｅ','[☢️]Ｂｅｔａ'}, nill, "Taiyou Project Updates Center v1.1")
 
@@ -40,7 +41,6 @@ end
 os.exit()
 
 -- Script --
--- Direct --
 ::ims::
 TG = gg.makeRequest("https://raw.githubusercontent.com/Taiyouscape/TaiyouProjects/Release/%5BStable%5DIconOnly.lua").content
 if not TG then

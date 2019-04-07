@@ -84,8 +84,10 @@ os.exit()
 -- Changelog --
 ::cs::
 gg.alert('Taiyou Project Script v1.2stable0504190931\n\n- Reworked some Value!')
+goto s
 os.exit()
 
 ::cb::
 gg.alert('Taiyou Project Script v1.3beta0704191109\nUNSTABLE VERSION‼️\n\n- Fix some value\n- Added new algorithm for faster scanning')
+goto s
 os.exit()

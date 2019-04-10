@@ -3,10 +3,11 @@
 goto s
 
 ::s::
-menu = gg.choice ({'[✔️]Ｓｔａｂｌｅ','[☢️]Ｂｅｔａ'}, nill, "Taiyou Project Updates Center v1.1")
+menu = gg.choice ({'[✔️]Ｓｔａｂｌｅ','[☢️]Ｂｅｔａ','[⚠️]Ｃｒｅｄｉｔ'}, nill, "Taiyou Project Updates Center v1.2")
 
 if menu == 1 then goto stable end
 if menu == 2 then goto beta end
+if menu == 3 then goto  ma end
 if menu == nill then end
 os.exit()
 
@@ -79,6 +80,11 @@ os.exit()
 else
 pcall(load(TG))
 end
+os.exit()
+
+::ma::
+gg.alert('Made by Taiyouscape\n\nSupport Taiyou Project!')
+goto s
 os.exit()
 
 -- Changelog --

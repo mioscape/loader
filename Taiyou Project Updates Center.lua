@@ -7,7 +7,7 @@ menu = gg.choice ({'[✔️]Ｓｔａｂｌｅ','[☢️]Ｂｅｔａ','[⚠️]
 
 if menu == 1 then goto stable end
 if menu == 2 then goto beta end
-if menu == 3 then goto  ma end
+if menu == 3 then goto ma end
 if menu == nill then end
 os.exit()
 

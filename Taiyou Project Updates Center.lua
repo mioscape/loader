@@ -3,11 +3,12 @@
 goto s
 
 ::s::
-menu = gg.choice ({'[✔️]Ｓｔａｂｌｅ','[☢️]Ｂｅｔａ','[⚠️]Ｃｒｅｄｉｔ'}, nill, "Taiyou Project Updates Center v1.2")
+menu = gg.choice ({'[✔️]Ｓｔａｂｌｅ','[☢️]Ｂｅｔａ','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｑｕｉｔ'}, nill, "Taiyou Project Updates Center v1.3")
 
 if menu == 1 then goto stable end
 if menu == 2 then goto beta end
 if menu == 3 then goto ma end
+if menu == 4 then goto q end
 if menu == nill then end
 os.exit()
 
@@ -38,6 +39,17 @@ if menusec == 1 then goto imb end
 if menusec == 2 then goto jrb end
 if menusec == 3 then goto cb end
 if menusec == 4 then goto s end
+end
+os.exit()
+
+::q::
+menusec = gg.choice({
+"[️✔️]ＹＥＳ",
+"[❌]ＮＯ"
+}, nil, "Do you really want to Exit?")
+if menusec == nil then else
+if menusec == 1 then goto qy end
+if menusec == 2 then goto s end
 end
 os.exit()
 
@@ -85,6 +97,9 @@ os.exit()
 ::ma::
 gg.alert('Made by Taiyouscape\n\nSupport Taiyou Project!')
 goto s
+os.exit()
+
+::qy::
 os.exit()
 
 -- Changelog --

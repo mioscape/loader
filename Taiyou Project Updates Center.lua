@@ -46,7 +46,7 @@ os.exit()
 menusec = gg.choice({
 "[️✔️]ＹＥＳ",
 "[❌]ＮＯ"
-}, nil, "Do you really want to Exit?")
+}, nil, "Do you really want to Quit?")
 if menusec == nil then else
 if menusec == 1 then goto qy end
 if menusec == 2 then goto s end

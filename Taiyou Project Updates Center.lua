@@ -3,7 +3,7 @@
 goto s
 
 ::s::
-menu = gg.choice ({'[✔️]Ｓｔａｂｌｅ','[☢️]Ｂｅｔａ','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｑｕｉｔ'}, nill, "Taiyou Project Updates Center v1.3")
+menu = gg.choice ({'[✔️]Ｓｔａｂｌｅ','[☢️]Ｂｅｔａ','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｑｕｉｔ'}, nill, "Taiyou Project Updates Center v1.4")
 
 if menu == 1 then goto stable end
 if menu == 2 then goto beta end
@@ -14,7 +14,7 @@ os.exit()
 
 ::stable::
 menusec = gg.choice({
-"[1️⃣]Stable Ｉｃｏｎ Ｍｉｎｉｍａｐ",
+"[1️⃣]Stable Ｉｃｏｎ Ｍｉｎｉｍａｐ(Be Careful, Cause Banned!)",
 "[2️⃣]Stable Ｊｕｎｇｌｅ Ｒａｄａｒ",
 "[⁉️]Changelog Stable",
 "[◀️]"
@@ -29,7 +29,7 @@ os.exit()
 
 ::beta::
 menusec = gg.choice({
-"[1️⃣]Beta Ｉｃｏｎ Ｍｉｎｉｍａｐ",
+"[1️⃣]Beta Ｉｃｏｎ Ｍｉｎｉｍａｐ(Be Careful, Cause Banned!)",
 "[2️⃣]Beta Ｊｕｎｇｌｅ Ｒａｄａｒ",
 "[⁉️]Changelog Beta",
 "[◀️]"
@@ -104,7 +104,7 @@ os.exit()
 
 -- Changelog --
 ::cs::
-gg.alert('Taiyou Project Script v1.2stable0504190931\n\n- Reworked some Value!')
+gg.alert('Taiyou Project Script v1.2stable1204190703\n\n- Changed some Value!')
 goto stable
 os.exit()
 

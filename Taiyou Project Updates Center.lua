@@ -33,7 +33,7 @@ menusec = gg.choice({
 "[2️⃣]Beta Ｊｕｎｇｌｅ Ｒａｄａｒ",
 "[⁉️]Changelog Beta",
 "[◀️]"
-}, nil, "Beta will updated everyday!.")
+}, nil, "Beta will updated when i have mood to update!.")
 if menusec == nil then else
 if menusec == 1 then goto imb end
 if menusec == 2 then goto jrb end

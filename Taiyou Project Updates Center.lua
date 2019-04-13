@@ -4,7 +4,7 @@ os.remove("/storage/emulated/0/Android/data/com.mobile.legends/files/ymrtc_log.t
 goto s
 
 ::s::
-menu = gg.choice ({'[✔️]Ｓｔａｂｌｅ','[☢️]Ｂｅｔａ','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｑｕｉｔ'}, nill, "Taiyou Project Updates Center v1.4")
+menu = gg.choice ({'[✔️]Ｓｔａｂｌｅ','[☢️]Ｂｅｔａ','[⚠️]Ｃｒｅｄｉｔ','[⛔]Ｑｕｉｔ'}, nill, "Taiyou Project Updates Center v1.5")
 
 if menu == 1 then goto stable end
 if menu == 2 then goto beta end

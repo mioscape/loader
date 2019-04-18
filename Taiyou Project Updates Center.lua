@@ -5,8 +5,8 @@ goto s
 
 ::s::
 menu = gg.choice({
-"[1️⃣]Stable Icon Radar(Be Careful, Cause Banned!)",
-"[2️⃣]Stable Jungle Radar",
+"[1️⃣]Icon Radar(Be Careful, Cause Banned!)",
+"[2️⃣]Jungle Radar",
 "[⁉️]Changelog & Credit",
 "[◀️]Quit"
 }, nil, "Taiyou Loader v1.6")

@@ -17,8 +17,7 @@ if menu == 3 then goto cs end
 if menu == 4 then goto q end
 end
 os.exit()
-
-
+-- Submenu --
 ::q::
 menusec = gg.choice({
 "[️✔️]ＹＥＳ",

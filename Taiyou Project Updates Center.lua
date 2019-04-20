@@ -55,6 +55,6 @@ os.exit()
 
 -- Changelog --
 ::cs::
-gg.alert('Taiyou Project Script v1.2stable1204190703\n\n- Fix Texts!\n\n\nMade By Taiyouscape!')
+gg.alert('Taiyou Project Script v1.2stable2004192128\n\n- Fix Texts!\n\n\nMade By Taiyouscape!')
 goto s
 os.exit()

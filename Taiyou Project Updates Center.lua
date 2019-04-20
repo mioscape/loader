@@ -6,13 +6,13 @@ goto s
 ::s::
 menu = gg.choice({
 "[1️⃣]Icon Radar(Be Careful, Cause Banned!)",
-"[2️⃣]Jungle Radar",
+"[2️⃣]Normal Radar",
 "[⁉️]Changelog & Credit",
 "[◀️]Quit"
-}, nil, "Taiyou Loader v1.6")
+}, nil, "Taiyou Loader v1.7")
 if menu == nil then else
 if menu == 1 then goto ims end
-if menu == 2 then goto jrs end
+if menu == 2 then goto nrs end
 if menu == 3 then goto cs end
 if menu == 4 then goto q end
 end
@@ -40,7 +40,7 @@ pcall(load(TG))
 end
 os.exit()
 
-::jrs::
+::nrs::
 TG = gg.makeRequest("https://raw.githubusercontent.com/Taiyouscape/TaiyouProjects/Release/%5BStable%5DJungleOnly.lua").content
 if not TG then
 gg.alert('Turn on Internet!')

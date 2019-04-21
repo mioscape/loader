@@ -9,7 +9,7 @@ menu = gg.choice({
 "[2️⃣]Normal Radar",
 "[⁉️]Changelog & Credit",
 "[◀️]Quit"
-}, nil, "Taiyou Loader v1.7")
+}, nil, "Taiyou Loader v1.8")
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end
@@ -55,6 +55,6 @@ os.exit()
 
 -- Changelog --
 ::cs::
-gg.alert('Taiyou Project Script v1.2stable2004192128\n\n- Fix Texts!\n\n\nMade By Taiyouscape!')
+gg.alert('Taiyou Project Script v1.3stable2104191103\n\n- Reworked Script to New LUA language!\n\n\nMade By Taiyouscape!')
 goto s
 os.exit()

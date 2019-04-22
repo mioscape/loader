@@ -53,7 +53,7 @@ end
 os.exit()
 
 ::ss::
-revo.goURL("https://taiyouproject.blogspot.com")
+revo.goURL("http://suarankri.me/SUPPORTTAIYOUPLEASE")
 os.exit()
 
 ::qy::

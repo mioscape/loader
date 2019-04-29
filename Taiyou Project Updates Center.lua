@@ -8,7 +8,6 @@ menu = gg.choice({
 "[1️⃣]Icon Radar(Be Careful, Cause Banned!)",
 "[2️⃣]Normal Radar",
 "[⁉️]Changelog & Credit",
-"[THX]Donation List",
 "[🥺]Support Taiyou",
 "[◀️]Quit"
 }, nil, "Taiyou Loader v1.9")
@@ -16,9 +15,8 @@ if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end
 if menu == 3 then goto cs end
-if menu == 4 then goto dn end
-if menu == 5 then goto ss end
-if menu == 6 then goto q end
+if menu == 4 then goto ss end
+if menu == 5 then goto q end
 end
 os.exit()
 -- Submenu --
@@ -55,7 +53,7 @@ end
 os.exit()
 
 ::ss::
-revo.goURL("http://suarankri.me/SUPPORTTAIYOUPLEASE")
+revo.goURL("https://templink.org/SUPPORTTAIYOUPLS")
 os.exit()
 
 ::qy::
@@ -64,10 +62,5 @@ os.exit()
 -- Changelog --
 ::cs::
 gg.alert('Taiyou Project Script v1.3stable2104191103\n\n- Reworked Script to New LUA language!\n\n\nMade By Taiyouscape!')
-goto s
-os.exit()
-
-::dn::
-gg.alert('DONATION LIST\n\n-')
 goto s
 os.exit()

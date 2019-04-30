@@ -1,4 +1,5 @@
 -- Taiyouscape --
+goto ss
 os.remove("/storage/emulated/0/Android/data/com.mobile.legends/files/ymrtc_log.txt")
 -- Menu --
 goto s
@@ -53,6 +54,12 @@ end
 os.exit()
 
 ::ss::
+yaya = gg.toast("Do you want to Support Taiyou?","Yes","No")
+if yaya = 1 then goto su end
+if yaya = 2 then goto s end
+end
+
+::su::
 revo.goURL("https://templink.org/SUPPORTTAIYOUPLS")
 os.exit()
 

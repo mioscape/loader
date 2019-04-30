@@ -32,7 +32,7 @@ if menusec == 2 then goto s end
 end
 os.exit()
 
--- Script --
+-- Script
 ::ims::
 TG = gg.makeRequest("https://raw.githubusercontent.com/Taiyouscape/TaiyouProjects/Release/%5BStable%5DIconOnly.lua").content
 if not TG then

@@ -8,6 +8,7 @@ goto s
 menu = gg.choice({
 "[1️⃣]Icon Radar(Be Careful, Cause Banned!)",
 "[2️⃣]Normal Radar",
+"[Test]Pubg Script",
 "[⁉️]Changelog & Credit",
 "[🥺]Support Taiyou",
 "[◀️]Quit"
@@ -15,9 +16,10 @@ menu = gg.choice({
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end
-if menu == 3 then goto cs end
-if menu == 4 then goto su end
-if menu == 5 then goto q end
+if menu == 3 then goto pbg end
+if menu == 4 then goto cs end
+if menu == 5 then goto su end
+if menu == 6 then goto q end
 end
 os.exit()
 -- Submenu --
@@ -52,6 +54,17 @@ else
 pcall(load(TG))
 end
 os.exit()
+
+::pbg::
+TG = gg.makeRequest("https://raw.githubusercontent.com/Taiyouscape/TaiyouProjects/Release/PUBGScriptALOK.lua").content
+if not TG then
+gg.alert('Turn on Internet!')
+os.exit()
+else
+pcall(load(TG))
+end
+os.exit()
+
 
 ::su::
 revo.goURL("https://templink.org/SUPPORTTAIYOUPLS")

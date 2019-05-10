@@ -11,7 +11,7 @@ menu = gg.choice({
 "[⁉️]Changelog & Credit",
 "[🥺]Support Taiyou",
 "[◀️]Quit"
-}, nil, "Taiyou Loader v1.9")
+}, nil, "Taiyou Loader v2.0")
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end

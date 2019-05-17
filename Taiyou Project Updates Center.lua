@@ -11,7 +11,7 @@ menu = gg.choice({
 "[⁉️]Changelog & Credit",
 "[🥺]Support Taiyou",
 "[◀️]Quit"
-}, nil, "Taiyou Loader v2.0")
+}, nil, "Raphiel Loader v2.0")
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end
@@ -34,7 +34,7 @@ os.exit()
 
 -- Script
 ::ims::
-TG = gg.makeRequest("https://raw.githubusercontent.com/Taiyouscape/TaiyouProjects/Release/%5BStable%5DIconOnly.lua").content
+TG = gg.makeRequest("https://raw.githubusercontent.com/Raphielsama/RaphielProject/Release/%5BStable%5DIconOnly.lua").content
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()
@@ -44,7 +44,7 @@ end
 os.exit()
 
 ::nrs::
-TG = gg.makeRequest("https://raw.githubusercontent.com/Taiyouscape/TaiyouProjects/Release/%5BStable%5DJungleOnly.lua").content
+TG = gg.makeRequest("https://raw.githubusercontent.com/Raphielsama/RaphielProject/Release/%5BStable%5DJungleOnly.lua").content
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()
@@ -63,6 +63,6 @@ os.exit()
 
 -- Changelog --
 ::cs::
-gg.alert('Taiyou Project Script v1.3stable2104191103\n\n- Reworked Script to New LUA language!\n\n\nMade By Taiyouscape!')
+gg.alert('Raphiel Project Script v1.3stable2104191103\n\n- Reworked Script to New LUA language!\n\n\nMade By Taiyouscape!')
 goto s
 os.exit()

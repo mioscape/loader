@@ -8,6 +8,7 @@ goto s
 menu = gg.choice({
 "[1️⃣]Icon Radar(Be Careful, Cause Banned!)",
 "[2️⃣]Normal Radar",
+"[3️⃣]PubgM Script by Alok",
 "[⁉️]Changelog & Credit",
 "[🥺]Support Raphiel",
 "[◀️]Quit"
@@ -15,9 +16,10 @@ menu = gg.choice({
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end
-if menu == 3 then goto cs end
-if menu == 4 then goto su end
-if menu == 5 then goto q end
+if menu == 3 then goto pu end
+if menu == 4 then goto cs end
+if menu == 5 then goto su end
+if menu == 6 then goto q end
 end
 os.exit()
 -- Submenu --
@@ -33,6 +35,16 @@ end
 os.exit()
 
 -- Script
+::pu::
+TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/Release/Alok_Vip.lua").content
+if not TG then
+gg.alert('Turn on Internet!')
+os.exit()
+else
+pcall(load(TG))
+end
+os.exit()
+
 ::ims::
 TG = gg.makeRequest("https://raw.githubusercontent.com/Raphielsama/RaphielProject/Release/%5BStable%5DIconOnly.lua").content
 if not TG then

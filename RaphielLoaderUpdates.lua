@@ -9,7 +9,7 @@ menu = gg.choice({
 "[1️⃣]Icon Radar(Be Careful, Cause Banned!)",
 "[2️⃣]Normal Radar",
 "[⁉️]Changelog & Credit",
-"[🥺]Support Taiyou",
+"[🥺]Support Raphiel",
 "[◀️]Quit"
 }, nil, "Raphiel Loader v2.0")
 if menu == nil then else

@@ -12,6 +12,7 @@ menu = gg.choice({
 "[4️⃣]PubgM Script ViP by Raphiel",
 "[⁉️]Changelog & Credit",
 "[🥺]Support Raphiel",
+"[🆕]Whatsapp Group",
 "[◀️]Quit"
 }, nil, "Raphiel Loader v2.1")
 if menu == nil then else
@@ -21,7 +22,8 @@ if menu == 3 then goto pu end
 if menu == 4 then goto log end
 if menu == 5 then goto cs end
 if menu == 6 then goto su end
-if menu == 7 then goto q end
+if menu == 7 then goto wa end
+if menu == 8 then goto q end
 end
 os.exit()
 -- Submenu --
@@ -79,6 +81,11 @@ os.exit()
 
 ::su::
 revo.goURL("https://templink.org/SUPPORTTAIYOUPLS")
+goto s
+os.exit()
+
+::wa::
+revo.goURL("https://chat.whatsapp.com/CllrpeIPrUj63df8qoMrLW")
 goto s
 os.exit()
 

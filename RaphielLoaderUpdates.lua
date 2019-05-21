@@ -38,7 +38,7 @@ os.exit()
 
 -- Script
 ::log::
-TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/Release/lel.lua").content
+TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/master/logdatabase.lua").content
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()

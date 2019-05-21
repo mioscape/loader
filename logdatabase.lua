@@ -16,13 +16,13 @@ print("Get a VIP Subscription Pack")
 end
 function EXPIRED()
 gg.alert("ID EXPIRED ")
-print("Get a VIP Subscription to Continue")
+print("Expand your ViP text Raphiel")
 os.exit()
 end
 
 function AB()
 AA = gg.prompt({"Username","Password"},nil,{"text","text"})
-if AA[1] == 'trialuser' and AA[2] == 'trialpass' then
+if AA[1] == 'raphieltrial' and AA[2] == 'raphieltrial' then
 CORRECT()
 Getfile()
 elseif AA[1] == 'Raphiel' and AA[2] == '08811812600' then

@@ -10,11 +10,11 @@ menu = gg.choice({
 "[2️⃣]Normal Radar",
 "[3️⃣]PubgM Script by Alok",
 "[4️⃣]PubgM Script ViP by Raphiel",
-"[⁉️]Changelog & Credit",
+"[⁉️]PubgM Host",
 "[🥺]Support Raphiel",
 "[🆕]Whatsapp Group",
 "[◀️]Quit"
-}, nil, "Raphiel Loader v2.1")
+}, nil, "Raphiel Loader v2.2")
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end
@@ -94,6 +94,6 @@ os.exit()
 
 -- Changelog --
 ::cs::
-gg.alert('Raphiel Project Script v1.3stable2104191103\n\n- Reworked Script to New LUA language!\n\n\nMade By Taiyouscape!')
+revo.goURL('https://github.com/Raphielsama/RaphielProject/archive/Host.zip')
 goto s
 os.exit()

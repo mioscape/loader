@@ -50,7 +50,7 @@ end
 os.exit()
 
 ::pu::
-TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/Release/Alok_Vip.lua").content
+TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/master/BEASTWARE_SUPER_SAFE_FREE.lua").content
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()

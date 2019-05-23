@@ -7,7 +7,7 @@ goto s
 menu = gg.choice({
 "[1️⃣]MLBB Icon Radar (Cause Banned)",
 "[2️⃣]MLBB Normal Radar",
-"[3️⃣]PubgM Script Free TechNilesly (Undetected)",
+"[3️⃣]PubgM Script Free TechyNilesh (Undetected)",
 "[4️⃣]PubgM Script ViP Raphiel (Trial Active until 25 May)",
 "[⁉️]PubgM Host (Undetected) - (23 May 2019)",
 "[🥺]Support Raphiel",

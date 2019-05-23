@@ -1,6 +1,5 @@
 -- Taiyouscape --
 gg.alert('Donation List!\n\n- mdwis')
-os.remove("/storage/emulated/0/Android/data/com.mobile.legends/files/ymrtc_log.txt")
 -- Menu --
 goto s
 

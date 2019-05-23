@@ -8,9 +8,9 @@ goto s
 menu = gg.choice({
 "[1️⃣]Icon Radar(Be Careful, Cause Banned!)",
 "[2️⃣]Normal Radar",
-"[3️⃣]PubgM Script by Alok",
+"[3️⃣]PubgM Script by Alok (Detected) - (Search new Value)",
 "[4️⃣]PubgM Script ViP by Raphiel",
-"[⁉️]PubgM Host",
+"[⁉️]PubgM Host (Detected) - (Maintenance)",
 "[🥺]Support Raphiel",
 "[🆕]Whatsapp Group",
 "[◀️]Quit"

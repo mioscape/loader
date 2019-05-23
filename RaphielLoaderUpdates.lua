@@ -6,13 +6,12 @@ goto s
 
 ::s::
 menu = gg.choice({
-"[1️⃣]Icon Radar(Be Careful, Cause Banned!)",
-"[2️⃣]Normal Radar",
-"[3️⃣]PubgM Script by Alok (Detected) - (Search new Value)",
-"[4️⃣]PubgM Script ViP by Raphiel",
-"[⁉️]PubgM Host (Detected) - (Maintenance)",
+"[1️⃣]MLBB Icon Radar (Cause Banned)",
+"[2️⃣]MLBB Normal Radar",
+"[3️⃣]PubgM Script Free TechNilesly (Undetected)",
+"[4️⃣]PubgM Script ViP Raphiel (Trial Active until 25 May)",
+"[⁉️]PubgM Host (Undetected) - (23 May 2019)",
 "[🥺]Support Raphiel",
-"[🆕]Whatsapp Group",
 "[◀️]Quit"
 }, nil, "Raphiel Loader v2.2")
 if menu == nil then else
@@ -22,8 +21,7 @@ if menu == 3 then goto pu end
 if menu == 4 then goto log end
 if menu == 5 then goto cs end
 if menu == 6 then goto su end
-if menu == 7 then goto wa end
-if menu == 8 then goto q end
+if menu == 7 then goto q end
 end
 os.exit()
 -- Submenu --
@@ -50,7 +48,7 @@ end
 os.exit()
 
 ::pu::
-TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/master/BEASTWARE_SUPER_SAFE_FREE.lua").content
+TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/Release/Raphielfree.lua").content
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()
@@ -81,11 +79,6 @@ os.exit()
 
 ::su::
 revo.goURL("https://templink.org/SUPPORTTAIYOUPLS")
-goto s
-os.exit()
-
-::wa::
-revo.goURL("https://chat.whatsapp.com/CllrpeIPrUj63df8qoMrLW")
 goto s
 os.exit()
 

@@ -9,7 +9,7 @@ menu = gg.choice({
 "[2️⃣]MLBB Normal Radar",
 "[3️⃣]PubgM Script Free TechyNilesh (Undetected)",
 "[4️⃣]PubgM Script ViP Raphiel (Trial Active until 25 May)",
-"[⁉️]PubgM Host (Undetected) - (23 May 2019)",
+"[⁉️]PubgM Host (Undetected) - (25 May 2019)",
 "[🥺]Support Raphiel",
 "[◀️]Quit"
 }, nil, "Raphiel Loader v2.2")

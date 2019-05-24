@@ -1,5 +1,5 @@
 function Getfile()
-TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/Release/RaphielVIP.lua").content
+TG = gg.makeRequest("https://raphielsama.000webhostapp.com/RaphielVIP.lua").content
 if not TG then
 gg.alert('Something Went Wrong')
 os.exit()

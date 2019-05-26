@@ -30,7 +30,6 @@ CORRECT()
 Getfile()
 elseif AA[1] == 'admin' and AA[2] == 'admin' then
 gg.alert("Only Registered IP & MAC can login in admin Account!")
-INVALID()
 else
 INVALID()
 end

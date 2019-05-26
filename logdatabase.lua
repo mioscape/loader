@@ -26,6 +26,8 @@ if AA[1] == 'raphieltrial' and AA[2] == 'raphieltrial' then
 CORRECT()
 Getfile()
 elseif AA[1] == 'Raphiel' and AA[2] == '08811812600' then
+CORRECT()
+Getfile()
 INVALID()
 else
 INVALID()

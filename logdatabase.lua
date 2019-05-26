@@ -8,15 +8,15 @@ pcall(load(TG))
 end
 end
 function CORRECT()
-gg.alert("CORRECT!")
+gg.alert("LOGIN-IN")
 end
 function INVALID()
-gg.alert("Invalid User Id or Password")
-print("Get a VIP Subscription Pack")
+gg.alert("Username / Password not listed in Database")
+print("Buy VIP account for access all VIP Raphiel Script!")
 end
 function EXPIRED()
-gg.alert("ID EXPIRED ")
-print("Expand your ViP text Raphiel")
+gg.alert("Username / Password already Expired!")
+print("Extend your VIP Account!")
 os.exit()
 end
 
@@ -28,6 +28,8 @@ Getfile()
 elseif AA[1] == 'Raphiel' and AA[2] == '08811812600' then
 CORRECT()
 Getfile()
+elseif AA[1] == 'admin' and AA[2] == 'admin' then
+gg.alert("Only Registered IP & MAC can login in admin Account!")
 INVALID()
 else
 INVALID()

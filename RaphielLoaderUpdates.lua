@@ -8,7 +8,7 @@ menu = gg.choice({
 "[1️⃣]MLBB Icon Radar (Cause Banned)",
 "[2️⃣]MLBB Normal Radar",
 "[3️⃣]PubgM Script Free TechyNilesh (Undetected)",
-"[4️⃣]PubgM Script ViP Raphiel (Trial Active until 25 May)",
+"[4️⃣]PubgM Script ViP Raphiel (Under Development)",
 "[⁉️]PubgM Host (Undetected) - (25 May 2019)",
 "[🥺]Support Raphiel",
 "[◀️]Quit"

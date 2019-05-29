@@ -5,14 +5,14 @@ goto s
 
 ::s::
 menu = gg.choice({
-"[1️⃣]MLBB Icon Radar (Cause Banned)",
-"[2️⃣]MLBB Normal Radar",
-"[3️⃣]PubgM Script Free TechyNilesh (Undetected)",
-"[4️⃣]PubgM Script ViP Raphiel (Under Development)",
-"[⁉️]PubgM Host (Undetected) - (28 May 2019)",
-"[🥺]Support Raphiel",
-"[◀️]Quit"
-}, nil, "Raphiel Loader v2.2")
+"//MLBB Icon Radar (Cause Banned) - (DISCONTINUED!)//",
+"//MLBB Normal Radar//",
+"//PubgM Script Free TechyNilesh (Undetected)//",
+"//PubgM Script ViP Raphiel (Under Development)//",
+"//PubgM Host (Undetected) - (28 May 2019)//",
+"//Support Raphiel//",
+"//Quit//"
+}, nil, "Raphiel Loader v2.3")
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end
@@ -26,8 +26,8 @@ os.exit()
 -- Submenu --
 ::q::
 menusec = gg.choice({
-"[️✔️]ＹＥＳ",
-"[❌]ＮＯ"
+"//ＹＥＳ//",
+"//ＮＯ//"
 }, nil, "Do you really want to Quit?")
 if menusec == nil then else
 if menusec == 1 then goto qy end

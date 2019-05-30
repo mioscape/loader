@@ -1,5 +1,5 @@
 -- Taiyouscape --
-gg.alert('Donation List!\n\n- mdwis')
+gg.alert('Donation List!\n\n- Mdwis\n- Dimas')
 -- Menu --
 goto s
 

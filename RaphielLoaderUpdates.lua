@@ -12,7 +12,7 @@ menu = gg.choice({
 "//PubgM Host (Banned Wave ON / Detected) - (28 May 2019)//",
 "//Support Raphiel//",
 "//Quit//"
-}, nil, "Raphiel Loader v2.3")
+}, nil, "Raphiel Loader v2.3 | Made with 💖 Raphiel")
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end

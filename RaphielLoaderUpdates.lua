@@ -7,9 +7,9 @@ goto s
 menu = gg.choice({
 "//MLBB Icon Radar (Cause Banned) - (DISCONTINUED!)//",
 "//MLBB Normal Radar//",
-"//PubgM Script Free TechyNilesh (Undetected)//",
+"//PubgM Script Free r00tsec (Undetected)//",
 "//PubgM Script ViP Raphiel (Under Development)//",
-"//PubgM Host (Undetected) - (2 June 2019)//",
+"//PubgM Host (Undetected) - (3 June 2019) - (Special for non-root)//",
 "//Support Raphiel//",
 "//Quit//"
 }, nil, "Raphiel Loader v2.3 | Made with 💖 Raphiel")

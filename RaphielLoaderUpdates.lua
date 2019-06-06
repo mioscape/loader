@@ -5,11 +5,11 @@ goto s
 
 ::s::
 menu = gg.choice({
-"//MLBB Icon Radar (Cause Banned) - (DISCONTINUED!)//",
+"//MLBB Icon Radar//",
 "//MLBB Normal Radar//",
 "//PubgM Script Free r00tsec (Undetected)//",
 "//PubgM Script ViP Raphiel (Under Development)//",
-"//PubgM Host (Detected) - (3 June 2019)//",
+"//PubgM Host (Undetected) - (5 June 2019)//",
 "//Support Raphiel//",
 "//Quit//"
 }, nil, "Raphiel Loader v2.3 | Made with 💖 Raphiel")

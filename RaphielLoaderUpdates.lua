@@ -1,6 +1,6 @@
--- Taiyouscape --
+-- Raphielsama
 gg.alert('Donation List!\n\n- Mdwis\n- Dimas')
--- Menu --
+-- Menu
 goto s
 
 ::s::
@@ -23,11 +23,11 @@ if menu == 6 then goto su end
 if menu == 7 then goto q end
 end
 os.exit()
--- Submenu --
+-- Submenu
 ::q::
 menusec = gg.choice({
-"//ＹＥＳ//",
-"//ＮＯ//"
+"//Yes//",
+"//No//"
 }, nil, "Do you really want to Quit?")
 if menusec == nil then else
 if menusec == 1 then goto qy end

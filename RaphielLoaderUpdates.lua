@@ -31,7 +31,7 @@ os.exit()
 
 -- Script
 ::ims::
-TG = gg.makeRequest("https://raw.githubusercontent.com/Raphielsama/RaphielProject/Release/%5BStable%5DIconOnly.lua").content
+TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/master/icon-radar.lua").content
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()
@@ -41,7 +41,7 @@ end
 os.exit()
 
 ::nrs::
-TG = gg.makeRequest("https://raw.githubusercontent.com/Raphielsama/RaphielProject/Release/%5BStable%5DJungleOnly.lua").content
+TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/master/normal-radar.lua").content
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()
@@ -51,7 +51,7 @@ end
 os.exit()
 
 ::su::
-revo.goURL("https://templink.org/SUPPORTTAIYOUPLS")
+gg.alert('Donate Pulsa to Raphiel :)\n\n It will Help Raphiel a Lot')
 goto s
 os.exit()
 

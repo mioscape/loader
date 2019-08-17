@@ -5,11 +5,11 @@ goto s
 
 ::s::
 menu = gg.choice({
-"//MLBB Icon Radar//",
-"//MLBB Normal Radar//",
-"//Support Raphiel//",
-"//Quit//"
-}, nil, "Raphiel Loader v2.4 | Made with 💖 Raphiel")
+"// MLBB Icon Radar //",
+"// MLBB Normal Radar //",
+"// Support Raphiel //",
+"// Quit //"
+}, nil, "Raphiel Loader v2.5 | Made with 💖 Raphiel")
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end
@@ -20,8 +20,8 @@ os.exit()
 -- Submenu
 ::q::
 menusec = gg.choice({
-"//Yes//",
-"//No//"
+"// Yes //",
+"// No //"
 }, nil, "Do you really want to Quit?")
 if menusec == nil then else
 if menusec == 1 then goto qy end

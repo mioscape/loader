@@ -30,7 +30,7 @@ end
 
 -- Number Code
 function ir()
-gg.setRanges(bit32.bxor(gg.REGION_C_ALLOC, gg.REGION_C_HEAP, gg.REGION_C_DATA, gg.REGION_C_BSS))
+gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
 gg.clearResults()
 gg.searchNumber("30000;0;0;1091567616;1091567616;1088421888;0;0", gg.TYPE_DWORD)
 gg.getResults(100)

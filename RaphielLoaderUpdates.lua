@@ -5,7 +5,7 @@ goto s
 
 ::s::
 menu = gg.choice({
-"// MLBB Icon Radar //",
+"// MLBB Icon Radar - Unity 2017 //",
 "// MLBB Normal Radar //",
 "// Support Raphiel //",
 "// Quit //"
@@ -31,7 +31,7 @@ os.exit()
 
 -- Script
 ::ims::
-TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/master/icon-radar.lua").content
+TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/master/icon-radar-unity.lua").content
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()

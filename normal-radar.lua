@@ -12,7 +12,7 @@ end
 
 TYU=1
 function radar()
-RD=gg.choice({"[1️⃣] Normal Radar (When match start / Jungles spawn)","[2️⃣] Refresh","[3️⃣] Revert (Don't click this, until i said stable!)","[4️⃣] Back"}, nil, "Radar Menu!.")
+RD=gg.choice({"[1️⃣] Normal Radar (When match start / Jungles spawn)","[2️⃣] Refresh","[3️⃣] Revert (Try Please!)","[4️⃣] Back"}, nil, "Radar Menu!.")
 if RD == 1 then nr() end
 if RD == 2 then nr() end
 if RD == 3 then rv() end
@@ -145,8 +145,7 @@ end
 
 -- Text Code
 function rv()
-gg.removeListItems(t)
-t = nil
+gg.clearList
 gg.toast('Value Reverted')
 end
 

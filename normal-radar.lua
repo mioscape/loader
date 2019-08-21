@@ -145,7 +145,8 @@ end
 
 -- Text Code
 function rv()
-gg.clearList
+t = gg.getListItems()
+gg.removeListItems(t)
 gg.toast('Value Reverted')
 end
 

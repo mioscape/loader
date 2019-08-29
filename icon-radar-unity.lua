@@ -30,15 +30,15 @@ end
 
 -- Number Code
 function ir()
-gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
 gg.clearResults()
-gg.searchNumber("30000;0;0;1091567616;1091567616;1088421888;0;0", gg.TYPE_DWORD)
+gg.setRanges(47)
+gg.searchNumber("30000;0;0;1091567616;1091567616;1088421888;0;0::::", 4, false, 536870912, 0, -1)
 gg.getResults(100)
-gg.searchNumber("1088421888", gg.TYPE_DWORD)
+gg.searchNumber("1088421888", 4, false, 536870912, 0, -1)
 gg.getResults(100)
-gg.editAll("1141538816", gg.TYPE_DWORD)
+gg.editAll("1141538816", 4)
 gg.clearResults()
-gg.toast("Activated!")
+gg.toast("Radar Activated")
 end
 
 function dd()

@@ -14,7 +14,7 @@ TYU=1
 function radar()
 RD=gg.choice({"1. Icon Radar","2. Revert","3. Back"}, nil, "Read the Title carefully!.")
 if RD == 1 then ir() end
-if RD == 2 then rr()
+if RD == 2 then rr() end
 if RD == 3 then START() end
 TYU=-1
 end

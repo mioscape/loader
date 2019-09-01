@@ -99,6 +99,7 @@ gg.removeListItems({ -- table(fa970f0)
 })
 gg.clearResults()
 gg.toast("Value Reverted")
+end
 
 function ir()
 gg.clearResults()

@@ -2,7 +2,7 @@
 -- First Menu
 TYU=1
 function START()
-ST=gg.choice({'1. Radar ラフィ(In Game)','2. Drone ラフィ(Lobby / Pick Hero)','3. Credit','4. Quit'}, nil, "The version you have is Raphiel Project Script v2.5betaiconradar")
+ST=gg.choice({'1. Radar ラフィ(In Game)','2. Drone ラフィ(Lobby / Pick Hero)','3. Credit','4. Quit'}, nil, "The version you have is Raphiel Project Script v2.5stableiconradar")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end

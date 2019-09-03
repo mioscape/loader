@@ -6,7 +6,7 @@ goto s
 ::s::
 menu = gg.choice({
 "// MLBB Icon Radar - Unity 2017 //",
-"// MLBB Normal Radar //",
+"// MLBB Normal Radar - Unity 2017 //",
 "// Support Raphiel //",
 "// Quit //"
 }, nil, "Raphiel Loader v2.5 | Made with 💖 Raphiel")
@@ -41,7 +41,7 @@ end
 os.exit()
 
 ::nrs::
-TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/master/normal-radar.lua").content
+TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/master/normal-radar-unity.lua").content
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()

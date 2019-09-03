@@ -12,7 +12,7 @@ end
 
 TYU=1
 function radar()
-RD=gg.choice({"[1️⃣] Normal Radar (When match start / Jungles spawn)","[2️⃣] Refresh","[3️⃣] Revert (Press me after end game!)","[4️⃣] Back"}, nil, "Radar Menu!.")
+RD=gg.choice({"[1️⃣] Normal Radar (When match start & Jungles spawn)","[2️⃣] Refresh","[3️⃣] Revert (Press me after end game!)","[4️⃣] Back"}, nil, "Radar Menu!.")
 if RD == 1 then nr() end
 if RD == 2 then nr() end
 if RD == 3 then rv() end
@@ -33,14 +33,15 @@ end
 -- Number Code
 function nr()
 gg.setRanges(bit32.bxor(gg.REGION_C_ALLOC))
-gg.searchNumber("16842752;14:5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.processResume()
-gg.searchAddress("4", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
-
+gg.clearResults()
+gg.searchNumber("14;-1;65,536::9", gg.TYPE_DWORD)
+gg.searchNumber("14", gg.TYPE_DWORD)
+gg.getResults(200)
+gg.editAll('9', gg.TYPE_DWORD)
 local t = gg.getResults(9999)
 for i, v in ipairs(t) do
 	if v.flags == gg.TYPE_DWORD then
-		v.value = "7"
+		v.value = "9"
 		v.freeze = true
 	end
 end

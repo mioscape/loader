@@ -2,7 +2,7 @@
 -- First Menu
 TYU=1
 function START()
-ST=gg.choice({'1. Radar ラフィ(In Game)','2. Drone ラフィ(Lobby / Pick Hero)','3. Credit','4. Quit'}, nil, "The version you have is Raphiel Project Script v2.5stableiconradar")
+ST=gg.choice({'[1️⃣] Radar ラフィ (In Game)','[2️⃣] Drone ラフィ (Draft Pick / Pick Hero)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is Raphiel Project Script v2.5stableiconradar")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
@@ -12,7 +12,7 @@ end
 
 TYU=1
 function radar()
-RD=gg.choice({"1. Icon Radar","2. Revert","3. Back"}, nil, "Read the Title carefully!.")
+RD=gg.choice({"[1️⃣] Icon Radar","[2️⃣] Revert","[3️⃣] Back"}, nil, "Read the Title carefully!.")
 if RD == 1 then ir() end
 if RD == 2 then rr() end
 if RD == 3 then START() end
@@ -21,7 +21,7 @@ end
 
 TYU=1
 function drone()
-DR=gg.choice({"1. Default","2. Medium","3. High","4. Back"}, nil, "Enable Drone Menu!")
+DR=gg.choice({"[1️⃣] Default","[2️⃣] Medium","[3️⃣] High","[4️⃣] Back"}, nil, "Enable Drone Menu!")
 if DR == 1 then dd() end
 if DR == 2 then dm() end
 if DR == 3 then dh() end

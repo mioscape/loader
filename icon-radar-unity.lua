@@ -1,5 +1,5 @@
 -- Raphielsama
--- First Menu
+-- Menu
 TYU=1
 function START()
 ST=gg.choice({'[1️⃣] Radar ラフィ (In Game)','[2️⃣] Drone ラフィ (Draft Pick / Pick Hero)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is Raphiel Project Script v2.5stableiconradar")
@@ -29,7 +29,7 @@ if DR == 4 then START() end
 TYU=-1
 end
 
--- Number Code
+-- Code
 function rr()
 t = gg.getListItems()
 	gg.removeListItems(t)

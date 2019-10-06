@@ -39,7 +39,7 @@ end
 
 function ir()
 gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
+gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
 gg.searchNumber('"2.53125F;2.3693558e-38F;0F;0F;0F;0F;0D::25"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.processResume()
 gg.refineNumber('"0"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)

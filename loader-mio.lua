@@ -10,7 +10,7 @@ menu = gg.choice({
 "// Donation List //",
 "// Support Mio //",
 "// Quit //"
-}, nil, "Raphiel Loader v2.5 | Made with 💖 Mio Natsume")
+}, nil, "Mio Loader v2.5 | Made with 💖 Mio Natsume")
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end

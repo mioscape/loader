@@ -1,4 +1,4 @@
--- Raphielsama
+-- mioscape
 
 -- Menu
 goto s
@@ -8,9 +8,9 @@ menu = gg.choice({
 "// MLBB Icon Radar - Unity 2017 //",
 "// MLBB Normal Radar - Unity 2017 //",
 "// Donation List //",
-"// Support Raphiel //",
+"// Support Mio //",
 "// Quit //"
-}, nil, "Raphiel Loader v2.5 | Made with 💖 Raphiel")
+}, nil, "Raphiel Loader v2.5 | Made with 💖 Mio Natsume")
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end
@@ -38,7 +38,7 @@ goto s
 os.exit()
 
 ::ims::
-TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/master/icon-radar-unity.lua").content
+TG = gg.makeRequest("https://github.com/mioscape/mioproject/raw/master/icon-radar-unity.lua").content
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()
@@ -48,7 +48,7 @@ end
 os.exit()
 
 ::nrs::
-TG = gg.makeRequest("https://github.com/Raphielsama/RaphielProject/raw/master/normal-radar-unity.lua").content
+TG = gg.makeRequest("https://github.com/mioscape/mioproject/raw/master/normal-radar-unity.lua").content
 if not TG then
 gg.alert('Turn on Internet!')
 os.exit()
@@ -58,7 +58,7 @@ end
 os.exit()
 
 ::su::
-gg.alert('Donate Pulsa to Raphiel :)\n\n It will Help Raphiel a Lot')
+gg.alert('Donate Pulsa to Mio Natsume :)\n\n It will Help Mio a Lot')
 goto s
 os.exit()
 

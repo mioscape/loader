@@ -1,8 +1,8 @@
--- Raphielsama
--- First Menu
+-- mioscape
+-- Menu
 TYU=1
 function START()
-ST=gg.choice({'[1️⃣] Radar ラフィ (In Game)','[2️⃣] Drone ラフィ (Draft Pick / Pick Hero)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is Raphiel Project Script v2.5stablenormalonly")
+ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Draft Pick / Pick Hero)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is mioproject Script v2.5stablenormalonly")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
@@ -32,7 +32,7 @@ end
 
 -- Number Code
 function nr()
-gg.setRanges(bit32.bxor(gg.REGION_C_ALLOC))
+gg.setRanges(gg.REGION_C_ALLOC)
 gg.clearResults()
 gg.searchNumber("14;-1;65,536::9", gg.TYPE_DWORD)
 gg.searchNumber("14", gg.TYPE_DWORD)
@@ -52,7 +52,7 @@ gg.toast('Normal Radar Activated!')
 end
 
 function dd()
-gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
+gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
 gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
 gg.searchNumber('1089806008', gg.TYPE_DWORD)
@@ -83,7 +83,7 @@ gg.toast("Activated!")
 end
 
 function dm()
-gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
+gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
 gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
 gg.searchNumber('1089806008', gg.TYPE_DWORD)
@@ -114,7 +114,7 @@ gg.toast("Activated!")
 end
 
 function dh()
-gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
+gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
 gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
 gg.searchNumber('1089806008', gg.TYPE_DWORD)
@@ -152,7 +152,7 @@ gg.toast('Value Reverted')
 end
 
 function credit()
-gg.alert('Made with 💖 Raphielsama!\n\nRaphiel Project is Open-Source Now!')
+gg.alert('Made with 💖 mioscape!\n\nmioproject is Open-Source Now!')
 START()
 end
 

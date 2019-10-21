@@ -2,7 +2,7 @@
 -- Menu
 TYU=1
 function START()
-ST=gg.choice({'[1️⃣] Radar ラフィ (In Game)','[2️⃣] Drone ラフィ (Draft Pick / Pick Hero)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is Mioproject Script v2.5stableiconradar")
+ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Draft Pick / Pick Hero)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is Mioproject Script v2.5stableiconradar")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
@@ -39,10 +39,10 @@ end
 
 function ir()
 gg.clearResults()
-gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
-gg.searchNumber('"2.53125F;2.3693558e-38F;0F;0F;0F;0F;0D::25"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("2.53125F;2.3693558e-38F;0F;0F;0F;0F;0D::25", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.processResume()
-gg.refineNumber('"0"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("0", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 local t = gg.getResults(100)
 for i, v in ipairs(t) do
 if v.flags == gg.TYPE_DWORD then
@@ -57,7 +57,7 @@ gg.toast("Radar Activated")
 end
 
 function dd()
-gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
+gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
 gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
 gg.searchNumber('1089806008', gg.TYPE_DWORD)
@@ -88,7 +88,7 @@ gg.toast("Activated!")
 end
 
 function dm()
-gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
+gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
 gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
 gg.searchNumber('1089806008', gg.TYPE_DWORD)
@@ -119,7 +119,7 @@ gg.toast("Activated!")
 end
 
 function dh()
-gg.setRanges(bit32.bxor(gg.REGION_ANONYMOUS))
+gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
 gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
 gg.searchNumber('1089806008', gg.TYPE_DWORD)

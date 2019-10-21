@@ -1,11 +1,10 @@
 -- mioscape
-
 -- Menu
 goto s
 
 ::s::
 menu = gg.choice({
-"// MLBB Icon Radar - Unity 2017 //",
+"// MLBB Icon Radar - Unity 2017 - Recommended //",
 "// MLBB Normal Radar - Unity 2017 //",
 "// Donation List //",
 "// Support Mio //",
@@ -58,7 +57,7 @@ end
 os.exit()
 
 ::su::
-gg.alert('Donate Pulsa to Mio Natsume :)\n\n It will Help Mio a Lot')
+gg.alert('Donate Pulsa to Mio Natsume :)\nIt will help Mio a lot')
 goto s
 os.exit()
 

@@ -1,4 +1,5 @@
 -- mioscape
+gg.toast('Donation List:\n1. Mdwis\n2. Dimas')
 -- Menu
 goto s
 

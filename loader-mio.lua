@@ -7,16 +7,14 @@ goto s
 menu = gg.choice({
 "// MLBB Icon Radar - Unity 2017 - Recommended //",
 "// MLBB Normal Radar - Unity 2017 //",
-"// Donation List //",
 "// Support Mio //",
 "// Quit //"
 }, nil, "Mio Loader v2.5 | Made with 💖 Mio Natsume")
 if menu == nil then else
 if menu == 1 then goto ims end
 if menu == 2 then goto nrs end
-if menu == 3 then goto dl end
-if menu == 4 then goto su end
-if menu == 5 then goto q end
+if menu == 3 then goto su end
+if menu == 4 then goto q end
 end
 os.exit()
 -- Submenu
@@ -32,11 +30,6 @@ end
 os.exit()
 
 -- Script
-::dl::
-gg.alert('Donation List!\n\n- Mdwis\n- Dimas')
-goto s
-os.exit()
-
 ::ims::
 TG = gg.makeRequest("https://github.com/mioscape/mioproject/raw/master/icon-radar-unity.lua").content
 if not TG then

@@ -1,3 +1,12 @@
+Password﻿ = '090803'
+PS = gg.prompt({'mioscape'},{[1]=''},{[1]='number'})
+if not PS the﻿n os.exit() 
+end 
+if PS[1] == Password then 
+gg.toast('mioscape')
+else 
+gg.alert('mioscape') os.exit() end
+
 -- mioscape
 TYU=1
 function START()

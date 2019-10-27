@@ -1,35 +1,22 @@
 -- mioscape
--- Menu
 TYU=1
 function START()
-ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Draft Pick / Pick Hero)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is Mioproject Script v0.1radar-beta")
+ST=gg.choice({'Radar 美緒 (In Game)','Quit'}, nil, "Mioscape")
 if ST == 1 then radar() end
-if ST == 2 then drone() end
-if ST == 3 then credit() end
-if ST == 4 then quit() end
+if ST == 2 then quit() end
 TYU=-1
 end
 
 TYU=1
 function radar()
-RD=gg.choice({"[1️⃣] Icon Radar","[2️⃣] Revert","[3️⃣] Back"}, nil, "Read the Title carefully!.")
+RD=gg.choice({"Icon Radar","Revert","Back"}, nil, "Mioscape")
 if RD == 1 then ir() end
 if RD == 2 then rr() end
 if RD == 3 then START() end
 TYU=-1
 end
 
-TYU=1
-function drone()
-DR=gg.choice({"[1️⃣] Default","[2️⃣] Medium","[3️⃣] High","[4️⃣] Back"}, nil, "Enable Drone Menu!")
-if DR == 1 then dd() end
-if DR == 2 then dm() end
-if DR == 3 then dh() end
-if DR == 4 then START() end
-TYU=-1
-end
-
--- Code
+-- mioscape
 function rr()
 t = gg.getListItems()
 	gg.removeListItems(t)
@@ -60,105 +47,7 @@ gg.searchNumber('1092616192', gg.TYPE_DWORD)
 gg.clearResults()
 end
 
-function dd()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.clearResults()
-gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('1089806008', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('1092616192', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('1092616192;-1053839852;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('-1053839852', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1050620723', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('1092616192;-1050620723;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('1089722122', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('1092584735', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('-1057677640;-1057761526;1110143140', gg.TYPE_DWORD)
-gg.searchNumber('-1057677640', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1054867456', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('-1054867456;-1057761526;1110143140', gg.TYPE_DWORD)
-gg.searchNumber('-1057761526', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1054898913', gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("Activated!")
-end
-
-function dm()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.clearResults()
-gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('1089806008', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('1094506008', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('1094506008;-1053839852;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('-1053839852', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1048839852', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('1094506008;-1048839852;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('1089722122', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('1094522122', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('-1057677640;-1057761526;1110143140', gg.TYPE_DWORD)
-gg.searchNumber('-1057677640', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1053577640', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('-1053577640;-1057761526;1110143140', gg.TYPE_DWORD)
-gg.searchNumber('-1057761526', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1054071526', gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("Activated!")
-end
-
-function dh()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.clearResults()
-gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('1089806008', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('1097649357', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('1097649357;-1053839852;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('-1053839852', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1045902131', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('1097649357;-1045902131;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('1089722122', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('1097607414', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('-1057677640;-1057761526;1110143140', gg.TYPE_DWORD)
-gg.searchNumber('-1057677640', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1049834291', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('-1049834291;-1057761526;1110143140', gg.TYPE_DWORD)
-gg.searchNumber('-1057761526', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1049876234', gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("Activated!")
-end
-
--- Text Code
-function credit()
-gg.alert('Made By mioscape!\n\nmioproject is Open-Source Now!')
-START()
-end
-
+-- mioscape
 function quit()
 os.exit()
 end

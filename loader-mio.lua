@@ -7,7 +7,7 @@ goto s
 menu = gg.choice({
 "// MLBB Icon Radar - Unity 2017 - Recommended //",
 "// MLBB Normal Radar - Unity 2017 //",
-"// MLBB Personal Radar - Unity 2017 - Try Personal Script from Mioscape! //",
+"// Personal //",
 "// Support Mio //",
 "// Quit //"
 }, nil, "Mio Loader v2.5 | Made with 💖 Mio Natsume")

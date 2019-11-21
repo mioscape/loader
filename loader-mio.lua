@@ -1,4 +1,5 @@
 -- mioscape
+gg.alert('Mioscape is not responsible for banned your account!\n\nMioscape tidak bertanggung jawab Atas ke banned nya akun anda!')
 gg.toast('Donation List:\n1. Mdwis\n2. Dimas')
 -- Menu
 goto s

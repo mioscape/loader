@@ -45,15 +45,6 @@ ze ={{['memory']=32},
 {['lv']=256,['offset']=0x4C,['type']=4},}
 mioscape ={{['value']=1,['offset']=0x18,['type']=4,['freeze']=true},}
 xzn(ze)
-mioa()
-end
-
-function mioa()
-gg.clearResults()
-gg.setRanges(gg.REGION_C_BSS | gg.REGION_ANONYMOUS )
-gg.searchNumber('1092616192;-1050620723;1092584735', gg.TYPE_DWORD)
-gg.searchNumber('1092616192', gg.TYPE_DWORD)
-gg.clearResults()
 end
 
 -- mioscape

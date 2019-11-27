@@ -2,7 +2,7 @@
 -- Menu
 TYU=1
 function START()
-ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Draft Pick / Pick Hero)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is Mioproject Script v2.6stableiconradar")
+ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Draft Pick / Pick Hero)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is Mioproject Script v2.6.1stableiconradar")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
@@ -21,11 +21,10 @@ end
 
 TYU=1
 function drone()
-DR=gg.choice({"[1️⃣] Default","[2️⃣] Medium","[3️⃣] High","[4️⃣] Back"}, nil, "Enable Drone Menu!")
-if DR == 1 then dd() end
-if DR == 2 then dm() end
-if DR == 3 then dh() end
-if DR == 4 then START() end
+DR=gg.choice({""[1️⃣] Medium","[2️⃣] High","[3️⃣] Back"}, nil, "Enable Drone Menu!")
+if DR == 1 then dm() end
+if DR == 2 then dh() end
+if DR == 3 then START() end
 TYU=-1
 end
 
@@ -54,37 +53,6 @@ gg.addListItems(t)
 t = nil
 gg.clearResults()
 gg.toast("Radar Activated")
-end
-
-function dd()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.clearResults()
-gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('1089806008', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('1092616192', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('1092616192;-1053839852;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('-1053839852', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1050620723', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('1092616192;-1050620723;1089722122', gg.TYPE_DWORD)
-gg.searchNumber('1089722122', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('1092584735', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('-1057677640;-1057761526;1110143140', gg.TYPE_DWORD)
-gg.searchNumber('-1057677640', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1054867456', gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber('-1054867456;-1057761526;1110143140', gg.TYPE_DWORD)
-gg.searchNumber('-1057761526', gg.TYPE_DWORD)
-gg.getResults(100)
-gg.editAll('-1054898913', gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("Activated!")
 end
 
 function dm()

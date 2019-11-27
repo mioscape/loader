@@ -21,7 +21,7 @@ end
 
 TYU=1
 function drone()
-DR=gg.choice({""[1️⃣] Medium","[2️⃣] High","[3️⃣] Back"}, nil, "Enable Drone Menu!")
+DR=gg.choice({"[1️⃣] Medium","[2️⃣] High","[3️⃣] Back"}, nil, "Enable Drone Menu!")
 if DR == 1 then dm() end
 if DR == 2 then dh() end
 if DR == 3 then START() end

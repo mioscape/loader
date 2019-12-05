@@ -2,7 +2,7 @@
 -- Menu
 TYU=1
 function START()
-ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Lobby)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is mioproject Script v2.6.1stablenormalonly")
+ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Lobby)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is mioproject Script v0.1alphanormalonly")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end

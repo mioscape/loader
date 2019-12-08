@@ -5,9 +5,9 @@ goto s
 
 ::s::
 menu = gg.choice({
-"// MLBB Icon Radar - Unity 2017 - Recommended //",
-"// MLBB Normal Radar - Unity 2017 - Unstable //",
-"// MLBB Beta Radar - Unity 2017 - Developer Only //",
+"// MLBB Icon Radar - v2.6.1stable //",
+"// MLBB Normal Radar - v0.2-0812191630alpha //",
+"// MLBB Beta Radar - v2.7beta //",
 "// Login Page - Testing //",
 "// Quit //"
 }, nil, "Mio Loader v2.6.2 | Made with 💖 Mio Natsume")

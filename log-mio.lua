@@ -8,19 +8,17 @@ pcall(load(TG))
 end
 end
 function CORRECT()
-gg.toast("Login-in")
+gg.toast("Sign-in")
 end
 function INVALID()
 gg.alert("Account not listed in Database")
-print("Buy VIP account for access all VIP Mioscape Script!")
 end
 function EXPIRED()
 gg.alert("Account already Expired!")
-print("Extend your VIP Account!")
 os.exit()
 end
 
- function AB()
+function AB()
 AA = gg.prompt({"Username","Password"},nil,{"text","text"})
 if AA[1] == 'y' and AA[2] == 'y' then
 CORRECT()

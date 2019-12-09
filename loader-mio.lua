@@ -6,9 +6,9 @@ goto s
 ::s::
 menu = gg.choice({
 "// MLBB Icon Radar - v2.6.1stable //",
-"// MLBB Normal Radar - v0.2-0812191630alpha //",
+"// MLBB Normal Radar - v0.3-0912191126alpha //",
 "// MLBB Beta Radar - v2.7beta //",
-"// Login Page - Testing //",
+"// Login Page - v1.0beta //",
 "// Quit //"
 }, nil, "Mio Loader v2.6.2 | Made with 💖 Mio Natsume")
 if menu == nil then else

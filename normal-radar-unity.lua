@@ -2,7 +2,7 @@
 -- Menu
 TYU=1
 function START()
-ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Lobby)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is mioproject Script v0.2-0812191630alphanormalradar")
+ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Lobby)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is mioproject Script v0.3-0912191126alphanormalradar")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
@@ -31,21 +31,17 @@ end
 
 -- Number Code
 function nr()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("14;-1;65,536:9", gg.TYPE_DWORD)
-gg.searchNumber('14', gg.TYPE_DWORD)
-gg.getResults(10)
-gg.editAll('9', gg.TYPE_DWORD)
-local t = gg.getResults(9999)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_DWORD then
-		v.value = "9"
-		v.freeze = true
-	end
-end
-gg.addListItems(t)
-t = nil
-gg.clearResults()
+function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplitIndex = 1 local nSplitArray = {} while true do local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex) if not nFindLastIndex then nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString)) break end nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1) nFindStartIndex = nFindLastIndex + string.len(szSeparator) nSplitIndex = nSplitIndex + 1 end return nSplitArray end 
+function xgxc(szpy, zen) for x = 1, #(zen) do xgpy = szpy + zen[x]['offset'] xglx = zen[x]['type'] xgsz = zen[x]['value'] xgdj = zen[x]['freeze'] if xgdj == nil or xgdj == '' then gg.setValues({[1] = {address = xgpy, flags = xglx, value = xgsz}}) else gg.addListItems({[1] = {address = xgpy, flags = xglx, freeze = xgdj, value = xgsz}}) end xgsl = xgsl + 1 xgjg = true end end 
+function xzn(ze) gg.clearResults() gg.setRanges(ze[1]['memory']) gg.searchNumber(ze[3]['value'], ze[3]['type']) if gg.getResultCount() == 0 then gg.toast(ze[2]['name'] .. 'Success') else gg.refineNumber(ze[3]['value'], ze[3]['type']) gg.refineNumber(ze[3]['value'], ze[3]['type']) gg.refineNumber(ze[3]['value'], ze[3]['type']) if gg.getResultCount() == 0 then gg.toast(ze[2]['name'] .. 'Success') else sl = gg.getResults(999999) sz = gg.getResultCount() xgsl = 0 if sz > 999999 then sz = 999999 end for i = 1, sz do pdsz = true for v = 4, #(ze) do if pdsz == true then pysz = {} pysz[1] = {} pysz[1].address = sl[i].address + ze[v]['offset'] pysz[1].flags = ze[v]['type'] szpy = gg.getValues(pysz) pdpd = ze[v]['lv'] .. ';' .. szpy[1].value szpd = split(pdpd, ';') tzszpd = szpd[1] pyszpd = szpd[2] if tzszpd == pyszpd then pdjg = true pdsz = true else pdjg = false pdsz = false end end end if pdjg == true then szpy = sl[i].address xgxc(szpy, zen) end end if xgjg == true then gg.toast(ze[2]['name'] .. 'Radar ON') else gg.toast(ze[2]['name'] .. 'Success') end end end end
+
+ze ={{['memory']=32},
+{['name']=''},
+{['value']=2.53125,['type']=16},
+{['lv']=2.3693558e-38,['offset']=0x4,['type']=16},
+{['lv']=0,['offset']=0x19,['type']=4},}
+zen ={{['value']=1,['offset']=0x18,['type']=4,['freeze']=true},}
+xzn(ze)
 gg.toast('Normal Radar Activated!')
 end
 

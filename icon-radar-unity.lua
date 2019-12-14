@@ -1,7 +1,7 @@
 -- mioscape
 TYU=1
 function START()
-ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Lobby)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is Mioproject Script v2.6.2stableiconradar")
+ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Lobby)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is Mioproject Script v2.6.3stableiconradar")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
@@ -36,8 +36,8 @@ gg.toast("Value Reverted")
 end
 
 function ir()
-gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
+gg.clearResults()
 gg.searchNumber("2.53125F;2.3693558e-38F;0F;0F;0F;0F;0D::25", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.processResume()
 gg.refineNumber("0", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
@@ -118,7 +118,7 @@ end
 
 -- Text Code
 function credit()
-gg.alert('Made By mioscape!\n\nmioproject is Open-Source Now!')
+gg.alert('Made By mioscape!')
 START()
 end
 

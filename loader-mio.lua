@@ -5,7 +5,7 @@ goto s
 
 ::s::
 menu = gg.choice({
-"// MLBB Icon Radar - v2.6.1stable //",
+"// MLBB Icon Radar - v2.6.3stable //",
 "// MLBB Normal Radar - v0.3-0912191126alpha //",
 "// MLBB Beta Radar - v2.7beta //",
 "// Login Page - v1.0beta //",

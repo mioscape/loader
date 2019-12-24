@@ -1,7 +1,7 @@
 -- mioscape
 TYU=1
 function START()
-ST=gg.choice({'[1️⃣] Radar 美緒 (In Game)','[2️⃣] Drone 美緒 (Lobby)','[3️⃣] Credit','[4️⃣] Quit'}, nil, "The version you have is Mioproject Script v2.6.3stableiconradar")
+ST=gg.choice({'[1] Radar 美緒 (In Game)','[2] Drone 美緒 (Lobby)','[3] Credit','[4] Quit'}, nil, "The version you have is Mioproject Script v2.6.4stableiconradar")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
@@ -11,7 +11,7 @@ end
 
 TYU=1
 function radar()
-RD=gg.choice({"[1️⃣] Icon Radar","[2️⃣] Revert","[3️⃣] Back"}, nil, "Powered by Mioscape Loader.")
+RD=gg.choice({"[1] Icon Radar","[2] Revert","[3] Back"}, nil, "Powered by Mioscape Loader.")
 if RD == 1 then ir() end
 if RD == 2 then rr() end
 if RD == 3 then START() end
@@ -20,7 +20,7 @@ end
 
 TYU=1
 function drone()
-DR=gg.choice({"[1️⃣] Medium","[2️⃣] High","[3️⃣] Back"}, nil, "Powered by Mioscape Loader.")
+DR=gg.choice({"[1] Medium","[2] High","[3] Back"}, nil, "Powered by Mioscape Loader.")
 if DR == 1 then dm() end
 if DR == 2 then dh() end
 if DR == 3 then START() end

@@ -1,30 +1,30 @@
 -- mioscape
-TYU=1
+MIO=1
 function START()
 ST=gg.choice({'[1] Radar 美緒 (In Game)','[2] Drone 美緒 (Lobby)','[3] Credit','[4] Quit'}, nil, "The version you have is Mioproject Script v2.6.4stableiconradar")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
 if ST == 4 then quit() end
-TYU=-1
+MIO=-1
 end
 
-TYU=1
+MIO=1
 function radar()
 RD=gg.choice({"[1] Icon Radar","[2] Revert","[3] Back"}, nil, "Powered by Mioscape Loader.")
 if RD == 1 then ir() end
 if RD == 2 then rr() end
 if RD == 3 then START() end
-TYU=-1
+MIO=-1
 end
 
-TYU=1
+MIO=1
 function drone()
 DR=gg.choice({"[1] Medium","[2] High","[3] Back"}, nil, "Powered by Mioscape Loader.")
 if DR == 1 then dm() end
 if DR == 2 then dh() end
 if DR == 3 then START() end
-TYU=-1
+MIO=-1
 end
 
 -- Code
@@ -115,8 +115,7 @@ gg.editAll('-1049876234', gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast("Activated!")
 end
-
--- Text Code
+ -- Text
 function credit()
 gg.alert('Made By mioscape!')
 START()
@@ -128,10 +127,10 @@ end
 
 while true do
 if gg.isVisible(true) then
-TYU = 1
+MIO = 1
 gg.setVisible(false)
 end
-if TYU == 1 then
+if MIO == 1 then
 START()
 end
 end

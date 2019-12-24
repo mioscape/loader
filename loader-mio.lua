@@ -3,7 +3,12 @@ gg.alert('Mioscape is not responsible for banned your account!\n\nDonation List:
 
 MIO=1
 function START()
-  ST=gg.choice({'// MLBB Icon Radar - v2.6.4stable //','// MLBB Normal Radar - v0.4-2412191804+GMT7alpha //','// MLBB Beta Radar - v2.7beta //','// Quit //'}, nil, 'Mio Loader v2.6.3 | Made with 💖 Mio Natsume')
+  ST=gg.choice({
+  '// MLBB Icon Radar - v2.6.4stable //',
+  '// MLBB Normal Radar - v0.4-2412191804+GMT7alpha //',
+  '// MLBB Beta Radar - v2.7beta //',
+  '// Quit //'
+}, nil, 'Mio Loader v2.6.4 | Made with 💖 Mio Natsume')
 if ST == 1 then ims() end
 if ST == 2 then nrs() end
 if ST == 3 then beta() end
@@ -18,6 +23,7 @@ function ims()
   os.exit()
   else
   pcall(load(TG))
+  end
 end
 
 function nrs()
@@ -27,6 +33,7 @@ function nrs()
   os.exit()
   else
   pcall(load(TG))
+  end
 end
 
 function beta()
@@ -36,6 +43,7 @@ function beta()
   os.exit()
   else
   pcall(load(TG))
+  end
 end
 
 function qy()

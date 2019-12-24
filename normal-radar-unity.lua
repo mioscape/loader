@@ -1,35 +1,34 @@
 -- mioscape
--- Menu
-TYU=1
+MIO=1
 function START()
 ST=gg.choice({'[1] Radar 美緒 (In Game)','[2] Drone 美緒 (Lobby)','[3] Credit','[4] Quit'}, nil, "The version you have is mioproject Script v0.4-2412191804+GMT7alphanormalradar")
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
 if ST == 4 then quit() end
-TYU=-1
+MIO=-1
 end
 
-TYU=1
+MIO=1
 function radar()
 RD=gg.choice({"[1] Normal Radar","[2] Refresh","[3] Revert","[4] Back"}, nil, "Radar Menu!.")
 if RD == 1 then nr() end
 if RD == 2 then nr() end
 if RD == 3 then rv() end
 if RD == 4 then START() end
-TYU=-1
+MIO=-1
 end
 
-TYU=1
+MIO=1
 function drone()
 DR=gg.choice({"[1] Medium","[2] High","[3] Back"}, nil, "Drone Menu!")
 if DR == 1 then dm() end
 if DR == 2 then dh() end
 if DR == 3 then START() end
-TYU=-1
+MIO=-1
 end
 
--- Number Code
+-- Code
 function nr()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
@@ -111,7 +110,7 @@ gg.clearResults()
 gg.toast("Activated!")
 end
 
--- Text Code
+-- Text
 function rv()
 t = gg.getListItems()
 gg.removeListItems(t)
@@ -129,10 +128,10 @@ end
 
 while true do
 if gg.isVisible(true) then
-TYU = 1
+MIO = 1
 gg.setVisible(false)
 end
-if TYU == 1 then
+if MIO == 1 then
 START()
 end
 end

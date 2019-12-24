@@ -1,7 +1,12 @@
 -- mioscape
 MIO=1
 function START()
-ST=gg.choice({'[1] Radar 美緒 (In Game)','[2] Drone 美緒 (Lobby)','[3] Credit','[4] Quit'}, nil, "The version you have is Mioproject Script v2.6.4stableiconradar")
+ST=gg.choice({
+  '[1] Radar 美緒 (In Game)',
+  '[2] Drone 美緒 (Lobby)',
+  '[3] Credit',
+  '[4] Quit'
+}, nil, 'The version you have is Mioproject Script v2.6.4stableiconradar')
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end
@@ -11,7 +16,11 @@ end
 
 MIO=1
 function radar()
-RD=gg.choice({"[1] Icon Radar","[2] Revert","[3] Back"}, nil, "Powered by Mioscape Loader.")
+RD=gg.choice({
+  '[1] Icon Radar',
+  '[2] Revert',
+  '[3] Back'
+}, nil, 'Powered by Mioscape Loader.')
 if RD == 1 then ir() end
 if RD == 2 then rr() end
 if RD == 3 then START() end
@@ -20,7 +29,11 @@ end
 
 MIO=1
 function drone()
-DR=gg.choice({"[1] Medium","[2] High","[3] Back"}, nil, "Powered by Mioscape Loader.")
+DR=gg.choice({
+  '[1] Medium',
+  '[2] High',
+  '[3] Back'
+}, nil, 'Powered by Mioscape Loader.')
 if DR == 1 then dm() end
 if DR == 2 then dh() end
 if DR == 3 then START() end
@@ -32,26 +45,26 @@ function rr()
 t = gg.getListItems()
 gg.removeListItems(t)
 gg.clearResults()
-gg.toast("Value Reverted")
+gg.toast('Value Reverted')
 end
 
 function ir()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
-gg.searchNumber("2.53125F;2.3693558e-38F;0F;0F;0F;0F;0D::25", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('2.53125F;2.3693558e-38F;0F;0F;0F;0F;0D::25', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.processResume()
-gg.refineNumber("0", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('0', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 local t = gg.getResults(100)
 for i, v in ipairs(t) do
 if v.flags == gg.TYPE_DWORD then
-  v.value = "11"
+  v.value = '11'
   v.freeze = true
  end
 end
 gg.addListItems(t)
 t = nil
 gg.clearResults()
-gg.toast("Radar Activated")
+gg.toast('Radar Activated')
 end
 
 function dm()
@@ -82,7 +95,7 @@ gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1054071526', gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast("Activated!")
+gg.toast('Activated!')
 end
 
 function dh()
@@ -113,7 +126,7 @@ gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1049876234', gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast("Activated!")
+gg.toast('Activated!')
 end
  -- Text
 function credit()

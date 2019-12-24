@@ -1,52 +1,58 @@
 -- mioscape
 gg.alert('Mioscape is not responsible for banned your account!\n\nDonation List:\n1. Mdwis\n2. Dimas')
 
-goto s
-
-::s::
-menu = gg.choice({
-"// MLBB Icon Radar - v2.6.4stable //",
-"// MLBB Normal Radar - v0.4-2412191804+GMT7alpha //",
-"// MLBB Beta Radar - v2.7beta //",
-"// Quit //"
-}, nil, "Mio Loader v2.6.3 | Made with 💖 Mio Natsume")
-if menu == nil then else
-if menu == 1 then goto ims end
-if menu == 2 then goto nrs end
-if menu == 3 then goto beta end
-if menu == 4 then goto qy end
+MIO=1
+function START()
+  ST=gg.choice({
+  '// MLBB Icon Radar - v2.6.4stable //',
+  '// MLBB Normal Radar - v0.4-2412191804+GMT7alpha //',
+  '// MLBB Beta Radar - v2.7beta //',
+  '// Quit //'
+}, nil, 'Mio Loader v2.6.3 | Made with 💖 Mio Natsume')})
+if ST == 1 then ims() end
+if ST == 2 then nrs() end
+if ST == 3 then beta() end
+if ST == 4 then qy() end
+MIO=-1
 end
-os.exit()
 
-::ims::
-TG = gg.makeRequest("https://github.com/mioscape/mioproject/raw/master/icon-radar-unity.lua").content
-if not TG then
-gg.alert('Connectivity Problem')
-os.exit()
-else
-pcall(load(TG))
+function ims()
+  TG = gg.makeRequest('https://github.com/mioscape/mioproject/raw/master/icon-radar-unity.lua').content
+  if not TG then
+  gg.alert('Connectivity Problem')
+  os.exit()
+  else
+  pcall(load(TG))
 end
-os.exit()
 
-::nrs::
-TG = gg.makeRequest("https://github.com/mioscape/mioproject/raw/master/normal-radar-unity.lua").content
-if not TG then
-gg.alert('Connectivity Problem')
-os.exit()
-else
-pcall(load(TG))
+function nrs()
+  TG = gg.makeRequest('https://github.com/mioscape/mioproject/raw/master/normal-radar-unity.lua').content
+  if not TG then
+  gg.alert('Connectivity Problem')
+  os.exit()
+  else
+  pcall(load(TG))
 end
-os.exit()
 
-::beta::
-TG = gg.makeRequest("https://raw.githubusercontent.com/mioscape/mioproject/master/radar-beta.lua").content
-if not TG then
-gg.alert('Connectivity Problem')
-os.exit()
-else
-pcall(load(TG))
+function beta()
+  TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/mioproject/master/radar-beta.lua').content
+  if not TG then
+  gg.alert('Connectivity Problem')
+  os.exit()
+  else
+  pcall(load(TG))
 end
-os.exit()
 
-::qy::
-os.exit()
+function qy()
+  os.exit()
+end
+
+while true do
+if gg.isVisible(true) then
+MIO = 1
+gg.setVisible(false)
+end
+if MIO == 1 then
+START()
+end
+end

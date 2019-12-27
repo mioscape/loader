@@ -1,6 +1,6 @@
-# Mioproject by Mioscape
+# Project by Mioscape
 
-Mioproject have Much feature, not really tho.
+Mio Loader have Much feature, not really tho.
 This loader has a feature to activate MLBB Radar.
 
 There are two features, namely:

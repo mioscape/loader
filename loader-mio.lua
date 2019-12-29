@@ -10,7 +10,7 @@ function START()
 }, nil, 'Mio Loader v2.6.5 | Made with 💖 Mio Natsume')
 if ST == 1 then ims() end
 if ST == 2 then nrs() end
-if ST == 3 then qy() end
+if ST == 3 then q() end
 MIO=-1
 end
 
@@ -34,7 +34,7 @@ function nrs()
   end
 end
 
-function qy()
+function q()
   os.exit()
 end
 

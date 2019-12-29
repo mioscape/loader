@@ -11,13 +11,8 @@ function START()
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then changelog() end
-<<<<<<< HEAD
 if ST == 4 then credit() end
 if ST == 5 then quit() end
-=======
-if ST == 3 then credit() end
-if ST == 4 then quit() end
->>>>>>> 59874fcd3d1f53edc6ce4b2b22ca5649b9a10dc4
 MIO=-1
 end
 

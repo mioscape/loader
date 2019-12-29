@@ -129,6 +129,8 @@ end
 -- Text
 function changelog()
   gg.alert('v0.5-291219alphanormalradar\nChangelogs:\n\n- Implemented New Scan System\n-Used New Value')
+START()
+end
 
 function rv()
 t = gg.getListItems()

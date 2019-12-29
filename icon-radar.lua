@@ -133,6 +133,8 @@ end
  -- Text
 function changelog()
   gg.alert('v2.6.5stableiconradar\nChangelogs:\n\n- Implemented New Scan System\n-Fixed Some Value')
+START()
+end
 
 function credit()
 gg.alert('Made By mioscape!')

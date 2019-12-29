@@ -6,7 +6,7 @@ function START()
     '[2] Drone 美緒 (Lobby)',
     '[3] Credit',
     '[4] Quit'
-}, nil, 'The version you have is mioproject Script v0.4-2412191804+GMT7alphanormalradar')
+}, nil, 'The version you have is mioproject Script v0.5-291219alphanormalradar')
 if ST == 1 then radar() end
 if ST == 2 then drone() end
 if ST == 3 then credit() end

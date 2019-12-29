@@ -4,8 +4,8 @@ gg.alert('Mioscape is not responsible for banned your account!\n\nDonation List:
 MIO=1
 function START()
   ST=gg.choice({
-    '// MLBB Icon Radar - v2.6.4stable //',
-    '// MLBB Normal Radar - v0.4-2412191804+GMT7alpha //',
+    '// MLBB Icon Radar - v2.6.5stable //',
+    '// MLBB Normal Radar - v0.5-291219alpha //',
     '// Quit //'
 }, nil, 'Mio Loader v2.6.5 | Made with 💖 Mio Natsume')
 if ST == 1 then ims() end

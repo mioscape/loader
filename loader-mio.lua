@@ -1,5 +1,5 @@
 -- mioscape
-gg.alert('Mioscape is not responsible for banned your account!\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar\n\n**Nama Donatur yang di Tampilkan diambil dari Username Whatsapp.')
+gg.alert('Mioscape is not responsible for banned your account!\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 
 MIO=1
 function START()

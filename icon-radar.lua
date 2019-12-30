@@ -4,13 +4,11 @@ function START()
   ST=gg.choice({
     '[1] Radar 美緒 (In Game)',
     '[2] Drone 美緒 (Lobby)',
-    '[3] Credit',
-    '[4] Quit'
-}, nil, 'The version you have is Mioproject Script v2.6.5stableiconradar')
+    '[3] Quit'
+}, nil, 'The version you have is Mioproject Script v2.7stableiconradar')
 if ST == 1 then radar() end
 if ST == 2 then drone() end
-if ST == 3 then credit() end
-if ST == 4 then quit() end
+if ST == 3 then quit() end
 MIO=-1
 end
 
@@ -129,12 +127,8 @@ gg.clearResults()
 gg.toast('Activated!')
 end
  -- Text
-function credit()
-gg.alert('Made By mioscape!')
-START()
-end
-
 function quit()
+gg.alert('Made By Mioscape with 💖!')
 os.exit()
 end
 

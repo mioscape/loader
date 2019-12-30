@@ -4,28 +4,24 @@ function START()
   ST=gg.choice({
     '[1] Radar 美緒 (In Game)',
     '[2] Drone 美緒 (Lobby)',
-    '[3] Credit',
-    '[4] Quit'
-}, nil, 'The version you have is mioproject Script v0.5-291219alphanormalradar')
+    '[3] Quit'
+}, nil, 'The version you have is mioproject Script v0.7-311219alphanormalradar')
 if ST == 1 then radar() end
 if ST == 2 then drone() end
-if ST == 3 then credit() end
-if ST == 4 then quit() end
+if ST == 3 then quit() end
 MIO=-1
 end
 
 MIO=1
 function radar()
   RD=gg.choice({
-  '[1] Normal Radar',
-  '[2] Refresh',
-  '[3] Revert',
-  '[4] Back'
+    '[1] Normal Radar & Refresh',
+    '[2] Revert',
+    '[3] Back'
 }, nil, 'Powered by Mioscape Loader.')
 if RD == 1 then nr() end
-if RD == 2 then nr() end
-if RD == 3 then rv() end
-if RD == 4 then START() end
+if RD == 2 then rv() end
+if RD == 3 then START() end
 MIO=-1
 end
 
@@ -131,12 +127,8 @@ gg.removeListItems(t)
 gg.toast('Value Reverted')
 end
 
-function credit()
-gg.alert('Made with 💖 mioscape!\n\nmioproject is Open-Source Now!')
-START()
-end
-
 function quit()
+gg.alert('Made By Mioscape with 💖!')
 os.exit()
 end
 

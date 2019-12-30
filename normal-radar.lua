@@ -4,15 +4,13 @@ function START()
   ST=gg.choice({
     '[1] Radar 美緒 (In Game)',
     '[2] Drone 美緒 (Lobby)',
-    '[3] Changelog'
-    '[4] Credit',
-    '[5] Quit'
+    '[3] Credit',
+    '[4] Quit'
 }, nil, 'The version you have is mioproject Script v0.5-291219alphanormalradar')
 if ST == 1 then radar() end
 if ST == 2 then drone() end
-if ST == 3 then changelog() end
-if ST == 4 then credit() end
-if ST == 5 then quit() end
+if ST == 3 then credit() end
+if ST == 4 then quit() end
 MIO=-1
 end
 
@@ -127,11 +125,6 @@ gg.toast('Activated!')
 end
 
 -- Text
-function changelog()
-  gg.alert('v0.5-291219alphanormalradar\nChangelogs:\n\n- Implemented New Scan System\n-Used New Value')
-START()
-end
-
 function rv()
 t = gg.getListItems()
 gg.removeListItems(t)

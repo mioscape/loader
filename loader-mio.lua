@@ -1,13 +1,13 @@
 -- mioscape
-gg.alert('Mioscape is not responsible for banned your account!\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
+gg.alert('Do With Your Own Risk!\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 
 MIO=1
 function START()
   ST=gg.choice({
-    '// MLBB Icon Radar - v2.7stable //',
-    '// MLBB Normal Radar - v0.7-311219alpha //',
-    '// Quit //'
-}, nil, 'Mio Loader v2.7 | Made with 💖 Mio Natsume')
+    '[MLBB Icon Radar] - [v2.7stable]',
+    '[MLBB Normal Radar] - [v0.7-311219alpha]',
+    '[Quit]'
+}, nil, 'Mio Loader v2.8 | Made by Mio Natsume with 💖')
 if ST == 1 then ims() end
 if ST == 2 then nrs() end
 if ST == 3 then qy() end

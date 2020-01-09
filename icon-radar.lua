@@ -1,40 +1,40 @@
 -- mioscape
 MIO=1
-function START()
+function ST()
   ST=gg.choice({
-    '[1] Radar 美緒 (In Game)',
-    '[2] Drone 美緒 (Lobby)',
-    '[3] Quit'
-}, nil, 'The version you have is Mioproject Script v2.7stableiconradar')
-if ST == 1 then radar() end
-if ST == 2 then drone() end
-if ST == 3 then quit() end
+    '[Radar 美緒] - [In Game]',
+    '[Drone 美緒] - [Lobby]',
+    '[Quit] - [See You Next Time!]'
+}, nil, 'The version you have is Mioproject Script v2.8stableiconradar')
+if ST == 1 then rd() end
+if ST == 2 then dr() end
+if ST == 3 then q() end
 MIO=-1
 end
 
 MIO=1
-function radar()
+function rd()
   RD=gg.choice({
-    '[1] Icon Radar',
-    '[2] Revert',
-    '[3] Back'
+    '[Icon Radar]',
+    '[Revert]',
+    '[Back]'
 }, nil, 'Powered by Mioscape Loader.')
 if RD == 1 then ir() end
 if RD == 2 then rr() end
-if RD == 3 then START() end
+if RD == 3 then ST() end
 MIO=-1
 end
 
 MIO=1
-function drone()
+function dr()
   DR=gg.choice({
-    '[1] Medium',
-    '[2] High',
-    '[3] Back'
+    '[Medium]',
+    '[High]',
+    '[Back]'
 }, nil, 'Powered by Mioscape Loader.')
 if DR == 1 then dm() end
 if DR == 2 then dh() end
-if DR == 3 then START() end
+if DR == 3 then ST() end
 MIO=-1
 end
 
@@ -127,7 +127,7 @@ gg.clearResults()
 gg.toast('Activated!')
 end
  -- Text
-function quit()
+function q()
 gg.alert('Made By Mioscape with 💖!')
 os.exit()
 end

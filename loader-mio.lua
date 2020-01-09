@@ -1,7 +1,7 @@
 -- mioscape
 
 MIO=1
-function STA()
+function START()
   ST=gg.choice({
     '[MLBB Icon Radar] - [v2.8stable]',
     '[MLBB Normal Radar] - [v0.8-09012020alpha]',

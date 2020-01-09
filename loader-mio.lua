@@ -1,8 +1,7 @@
--- mioscape project
-gg.Toast('Do With Your Own Risk!')
+-- mioscape
 
 MIO=1
-function ST()
+function STA()
   ST=gg.choice({
     '[MLBB Icon Radar] - [v2.8stable]',
     '[MLBB Normal Radar] - [v0.8-09012020alpha]',

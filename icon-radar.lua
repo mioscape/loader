@@ -1,6 +1,6 @@
 -- mioscape
 MIO=1
-function ST()
+function START()
   ST=gg.choice({
     '[Radar 美緒] - [In Game]',
     '[Drone 美緒] - [Lobby]',
@@ -21,7 +21,7 @@ function rd()
 }, nil, 'Powered by Mioscape Loader.')
 if RD == 1 then ir() end
 if RD == 2 then rr() end
-if RD == 3 then ST() end
+if RD == 3 then START() end
 MIO=-1
 end
 
@@ -34,7 +34,7 @@ function dr()
 }, nil, 'Powered by Mioscape Loader.')
 if DR == 1 then dm() end
 if DR == 2 then dh() end
-if DR == 3 then ST() end
+if DR == 3 then START() end
 MIO=-1
 end
 

@@ -1,5 +1,4 @@
 -- mioscape
-
 MIO=1
 function START()
   ST=gg.choice({

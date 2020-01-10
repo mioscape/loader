@@ -1,11 +1,11 @@
 -- mioscape
 MIO=1
-function ST()
+function START()
   ST=gg.choice({
     '[Radar 美緒] - [In Game]',
     '[Drone 美緒] - [Lobby]',
     '[Quit] - [See You Next Time!]'
-}, nil, 'The version you have is mioproject Script v0.8-09012020alphanormalradar')
+}, nil, 'The version you have is Mioproject Script v0.8-09012020alphanormalradar')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 if ST == 3 then q() end
@@ -21,7 +21,7 @@ function rd()
 }, nil, 'Powered by Mioscape Loader.')
 if RD == 1 then nr() end
 if RD == 2 then rv() end
-if RD == 3 then ST() end
+if RD == 3 then START() end
 MIO=-1
 end
 
@@ -34,7 +34,7 @@ function dr()
 }, nil, 'Powered by Mioscape Loader.')
 if DR == 1 then dm() end
 if DR == 2 then dh() end
-if DR == 3 then ST() end
+if DR == 3 then START() end
 MIO=-1
 end
 

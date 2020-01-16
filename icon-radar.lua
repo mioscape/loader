@@ -5,7 +5,7 @@ function START()
     '[Radar 美緒] - [In Game]',
     '[Drone 美緒] - [Lobby]',
     '[Quit] - [See You Next Time!]'
-}, nil, 'The version you have is Mioproject Script v2.8.2betaiconradar')
+}, nil, 'The version you have is Mioproject Script v2.8.3betaiconradar')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 if ST == 3 then q() end
@@ -102,9 +102,9 @@ gg.clearResults()
 gg.searchNumber('1097649357;-1053839852;1089722122', gg.TYPE_DWORD)
 gg.searchNumber('-1053839852', gg.TYPE_DWORD)
 gg.getResults(100)
-gg.editAll('-1035902131', gg.TYPE_DWORD)
+gg.editAll('-1045902131', gg.TYPE_DWORD)
 gg.clearResults()
-gg.searchNumber('1097649357;-1035902131;1089722122', gg.TYPE_DWORD)
+gg.searchNumber('1097649357;-1045902131;1089722122', gg.TYPE_DWORD)
 gg.searchNumber('1089722122', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('1097607414', gg.TYPE_DWORD)
@@ -112,7 +112,7 @@ gg.clearResults()
 gg.searchNumber('-1057677640;-1057761526;1110143140', gg.TYPE_DWORD)
 gg.searchNumber('-1057677640', gg.TYPE_DWORD)
 gg.getResults(100)
-gg.editAll('-1039834291', gg.TYPE_DWORD)
+gg.editAll('-1049834291', gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast('Activated!')
 end

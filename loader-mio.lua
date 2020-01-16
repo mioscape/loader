@@ -2,7 +2,7 @@
 MIO=1
 function START()
   ST=gg.choice({
-    '[MLBB Icon Radar] - [v2.8stable]',
+    '[MLBB Icon Radar] - [v2.8.1beta]',
     '[MLBB Normal Radar] - [v0.8-09012020alpha]',
     '[Quit] - [See You Next Time!]'
 }, nil, 'Mio Loader v2.8 | Made by Mio Natsume with 💖\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')

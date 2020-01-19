@@ -3,9 +3,9 @@ MIO=1
 function START()
   ST=gg.choice({
     '[Radar 美緒] - [In Game]',
-    '[Drone 美緒] - [Lobby]',
+    '[Drone 美緒] - [Draft Pick / Hero Pick]',
     '[Quit] - [See You Next Time!]'
-}, nil, 'The version you have is Mioproject Script v2.8.3betaiconradar')
+}, nil, 'v2.8.4betaiconradar\n\nChangelogs:\n- Attempt to Fix Drone\n- Fix Strings')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 if ST == 3 then q() end
@@ -86,9 +86,14 @@ gg.clearResults()
 gg.searchNumber('-1057677640;-1057761526;1110143140', gg.TYPE_DWORD)
 gg.searchNumber('-1057677640', gg.TYPE_DWORD)
 gg.getResults(100)
-gg.editAll('-1047677640', gg.TYPE_DWORD)
+gg.editAll('-1053577640', gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('Activated!')
+gg.searchNumber('-1053577640;-1057761526;1110143140', gg.TYPE_DWORD)
+gg.searchNumber('-1057761526', gg.TYPE_DWORD)
+gg.getResults(100)
+gg.editAll('-1054071526', gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast('Drone Activated!')
 end
 
 function dh()
@@ -97,25 +102,31 @@ gg.clearResults()
 gg.searchNumber('1089806008;-1053839852;1089722122', gg.TYPE_DWORD)
 gg.searchNumber('1089806008', gg.TYPE_DWORD)
 gg.getResults(100)
-gg.editAll('1097649357', gg.TYPE_DWORD)
+gg.editAll('1097699357', gg.TYPE_DWORD)
 gg.clearResults()
 gg.searchNumber('1097649357;-1053839852;1089722122', gg.TYPE_DWORD)
 gg.searchNumber('-1053839852', gg.TYPE_DWORD)
 gg.getResults(100)
-gg.editAll('-1045902131', gg.TYPE_DWORD)
+gg.editAll('-1045952131', gg.TYPE_DWORD)
 gg.clearResults()
 gg.searchNumber('1097649357;-1045902131;1089722122', gg.TYPE_DWORD)
 gg.searchNumber('1089722122', gg.TYPE_DWORD)
 gg.getResults(100)
-gg.editAll('1097607414', gg.TYPE_DWORD)
+gg.editAll('1097657414', gg.TYPE_DWORD)
 gg.clearResults()
 gg.searchNumber('-1057677640;-1057761526;1110143140', gg.TYPE_DWORD)
 gg.searchNumber('-1057677640', gg.TYPE_DWORD)
 gg.getResults(100)
-gg.editAll('-1049834291', gg.TYPE_DWORD)
+gg.editAll('-1049884291', gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('Activated!')
+gg.searchNumber('-1049834291;-1057761526;1110143140', gg.TYPE_DWORD)
+gg.searchNumber('-1057761526', gg.TYPE_DWORD)
+gg.getResults(100)
+gg.editAll('-1049926234', gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast('Drone Activated!')
 end
+
  -- Text
 function q()
 gg.alert('Made By Mioscape with 💖!')

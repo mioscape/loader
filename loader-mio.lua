@@ -2,10 +2,10 @@
 MIO=1
 function START()
   ST=gg.choice({
-    '[MLBB Icon Radar] - [v2.8.4beta]',
-    '[MLBB Normal Radar] - [v0.8-09012020alpha]',
+    '[MLBB Icon Radar]',
+    '[MLBB Normal Radar]',
     '[Quit] - [See You Next Time!]'
-}, nil, 'Mio Loader v2.8 | Made by Mio Natsume with 💖\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
+}, nil, 'Mio Loader™ v2.9 | Made by Mioscape with 💖\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 if ST == 1 then ims() end
 if ST == 2 then nrs() end
 if ST == 3 then qy() end

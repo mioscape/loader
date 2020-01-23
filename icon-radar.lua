@@ -3,9 +3,9 @@ MIO=1
 function START()
   ST=gg.choice({
     '[Radar 美緒] - [In Game]',
-    '[Drone 美緒] - [Draft Pick / Hero Pick]',
+    '[Drone 美緒] - [Lobby / Draft Pick / Hero Pick / In Game]',
     '[Quit] - [See You Next Time!]'
-}, nil, 'v2.8.4betaiconradar\n\nChangelogs:\n- Attempt to Fix Drone\n- Fix Strings')
+}, nil, '[MLBB Icon Radar] - [Made By Mioscape with 💖!]\n\nv2.9stable')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 if ST == 3 then q() end
@@ -18,7 +18,7 @@ function rd()
     '[Icon Radar]',
     '[Revert]',
     '[Back]'
-}, nil, 'Powered by Mioscape Loader.')
+}, nil, 'Powered by Mio Loader™.')
 if RD == 1 then ir() end
 if RD == 2 then rr() end
 if RD == 3 then START() end
@@ -31,7 +31,7 @@ function dr()
     '[Medium]',
     '[High]',
     '[Back]'
-}, nil, 'Powered by Mioscape Loader.')
+}, nil, 'Powered by Mio Loader™.')
 if DR == 1 then dm() end
 if DR == 2 then dh() end
 if DR == 3 then START() end
@@ -129,7 +129,6 @@ end
 
  -- Text
 function q()
-gg.alert('Made By Mioscape with 💖!')
 os.exit()
 end
 

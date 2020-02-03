@@ -2,10 +2,10 @@
 MIO=1
 function START()
   ST=gg.choice({
-    '[Radar 美緒] - [In Game]',
-    '[Drone 美緒] - [Lobby / Draft Pick / Hero Pick / In Game]',
-    '[Quit] - [See You Next Time!]'
-}, nil, '[MLBB Icon Radar] - [Made By Mioscape with 💖!]\n\nv2.9stable')
+    '[Radar 美緒 // In Game]',
+    '[Drone 美緒 // Lobby / Draft Pick / Hero Pick / In Game]',
+    '[Quit // See You Next Time!]'
+}, nil, '[MLBB Icon Radar // Made By Mioscape with 💖!]\n\nv3.0stable')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 if ST == 3 then q() end
@@ -55,7 +55,7 @@ gg.refineNumber('0', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 local t = gg.getResults(100)
 for i, v in ipairs(t) do
 if v.flags == gg.TYPE_DWORD then
-  v.value = '10'
+  v.value = '7'
   v.freeze = true
  end
 end

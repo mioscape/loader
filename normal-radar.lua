@@ -2,10 +2,10 @@
 MIO=1
 function START()
   ST=gg.choice({
-    '[Radar 美緒] - [In Game]',
-    '[Drone 美緒] - [Lobby / Draft Pick / Hero Pick / In Game]',
-    '[Quit] - [See You Next Time!]'
-}, nil, '[MLBB Normal Radar] - [Made By Mioscape with 💖!]\n\nv0.11-23012020alpha')
+    '[Radar 美緒 // In Game]',
+    '[Drone 美緒 // Lobby / Draft Pick / Hero Pick / In Game]',
+    '[Quit // See You Next Time!]'
+}, nil, '[MLBB Normal Radar // Made By Mioscape with 💖!]\n\nv0.24-03022020alpha')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 if ST == 3 then q() end
@@ -15,7 +15,7 @@ end
 MIO=1
 function rd()
   RD=gg.choice({
-    '[Normal Radar] - [Refresh]',
+    '[Normal Radar // Refresh]',
     '[Revert]',
     '[Back]'
 }, nil, 'Powered by Mio Loader™.')

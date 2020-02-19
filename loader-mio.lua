@@ -1,3 +1,4 @@
+gg.alert('Handphone ku rusak T_T\nJadi akan jarang update. Whatsapp ku jadi nggak online, bisa chat di Telegram @mioscape')
 -- mioscape
 MIO=1
 function START()

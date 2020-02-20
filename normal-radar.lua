@@ -4,11 +4,9 @@ function START()
   ST=gg.choice({
     '[Radar 美緒 // In Game]',
     '[Drone 美緒 // Lobby / Draft Pick / Hero Pick / In Game]',
-    '[Quit // See You Next Time!]'
-}, nil, '[MLBB Normal Radar // Made By Mioscape with 💖!]\n\nv0.27-17022020alpha')
+}, nil, '[MLBB Normal Radar // Made By Mioscape with 💖!]\n\nv0.33-20022020alpha')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
-if ST == 3 then q() end
 MIO=-1
 end
 
@@ -121,10 +119,6 @@ function rv()
 t = gg.getListItems()
 gg.removeListItems(t)
 gg.toast('Value Reverted')
-end
-
-function q()
-os.exit()
 end
 
 while true do

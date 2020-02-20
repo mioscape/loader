@@ -4,11 +4,9 @@ function START()
   ST=gg.choice({
     '[MLBB // Icon Radar]',
     '[MLBB // Normal Radar]',
-    '[Quit // See You Next Time!]'
-}, nil, 'Mio Loader™ v3.0 | Made by Mioscape with 💖\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
+}, nil, 'Mio Loader™ v3.1 | Made by Mioscape with 💖\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 if ST == 1 then ims() end
 if ST == 2 then nrs() end
-if ST == 3 then qy() end
 MIO=-1
 end
 
@@ -28,10 +26,6 @@ function nrs()
   else
   pcall(load(TG))
   end
-end
-
-function qy()
-  os.exit()
 end
 
 while true do

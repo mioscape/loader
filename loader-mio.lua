@@ -1,4 +1,4 @@
-gg.alert('Handphone ku rusak T_T\nJadi akan jarang update. Whatsapp ku jadi nggak online, bisa chat di Telegram @mioscape')
+gg.alert('Pesan Dari Mio:\nHandphone ku rusak kebanting di kamar mandi😭, jadi update bakal jarang banget karena ga bisa ku test langsung. Kalau memang kamu bisa mencari value dan ingin membantu di Project ku, bisa pull request ke github Repository ku https://github.com/mioscape/project. Untuk saat ini kalian bisa Contact aku melalui Telegram https://t.me/mioscape.\nKalau kalian ingin Join ke Group Telegram https://t.me/joinchat/IOWqVhOC4d0W66H1cgtCRg.\n\nSekian dan Terimakasih😊')
 -- mioscape
 MIO=1
 function START()

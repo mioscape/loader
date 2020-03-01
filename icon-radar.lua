@@ -2,9 +2,9 @@
 MIO=1
 function START()
   ST=gg.choice({
-    '[Radar 美緒 // In Game]',
-    '[Drone 美緒 // Lobby / Draft Pick / Hero Pick / In Game]',
-}, nil, '[MLBB Icon Radar // Made By Mioscape with 💖!]\n\nv3.1stable')
+    '\n[Radar 美緒]\n',
+    '\n[Drone 美緒]\n',
+}, nil, '[MLBB Icon Radar // Made By Mioscape with 💖!]\n\nv3.2stable')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 MIO=-1
@@ -13,9 +13,9 @@ end
 MIO=1
 function rd()
   RD=gg.choice({
-    '[Icon Radar]',
-    '[Revert]',
-    '[Back]'
+    '\n[Icon Radar]\n',
+    '\n[Revert]\n',
+    '\n[Back]\n'
 }, nil, 'Powered by Mio Loader™.')
 if RD == 1 then ir() end
 if RD == 2 then rr() end
@@ -26,9 +26,9 @@ end
 MIO=1
 function dr()
   DR=gg.choice({
-    '[Medium]',
-    '[High]',
-    '[Back]'
+    '\n[Medium]\n',
+    '\n[High]\n',
+    '\n[Back]\n'
 }, nil, 'Powered by Mio Loader™.')
 if DR == 1 then dm() end
 if DR == 2 then dh() end
@@ -41,7 +41,7 @@ function rr()
 t = gg.getListItems()
 gg.removeListItems(t)
 gg.clearResults()
-gg.toast('Value Reverted')
+gg.toast('Reverted')
 end
 
 function ir()
@@ -53,14 +53,14 @@ gg.refineNumber('0', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 local t = gg.getResults(100)
 for i, v in ipairs(t) do
 if v.flags == gg.TYPE_DWORD then
-  v.value = '14'
+  v.value = '10'
   v.freeze = true
  end
 end
 gg.addListItems(t)
 t = nil
 gg.clearResults()
-gg.toast('Radar Activated')
+gg.toast('Activated')
 end
 
 function dm()
@@ -91,7 +91,7 @@ gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1054071526', gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('Drone Activated!')
+gg.toast('Activated!')
 end
 
 function dh()
@@ -122,7 +122,7 @@ gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1049926234', gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('Drone Activated!')
+gg.toast('Activated!')
 end
 
 while true do

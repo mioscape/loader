@@ -2,9 +2,9 @@
 MIO=1
 function START()
   ST=gg.choice({
-    '[MLBB // Icon Radar]',
-    '[MLBB // Normal Radar]',
-}, nil, 'Mio Loader™ v3.1 | Made by Mioscape with 💖\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
+    '\n[MLBB // Icon Radar]\n',
+    '\n[MLBB // Normal Radar]\n',
+}, nil, 'Mio Loader™ v3.2 | Made by Mioscape with 💖\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 if ST == 1 then ims() end
 if ST == 2 then nrs() end
 MIO=-1

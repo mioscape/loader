@@ -2,9 +2,9 @@
 MIO=1
 function START()
   ST=gg.choice({
-    '[Radar 美緒 // In Game]',
-    '[Drone 美緒 // Lobby / Draft Pick / Hero Pick / In Game]',
-}, nil, '[MLBB Normal Radar // Made By Mioscape with 💖!]\n\nv0.33-20022020alpha')
+    '\n[Radar 美緒]\n',
+    '\n[Drone 美緒]\n',
+}, nil, '[MLBB Normal Radar // Made By Mioscape with 💖!]\n\nv0.48-01032020alpha-discontinuedforawhile')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 MIO=-1
@@ -13,9 +13,9 @@ end
 MIO=1
 function rd()
   RD=gg.choice({
-    '[Normal Radar // Refresh]',
-    '[Revert]',
-    '[Back]'
+    '\n[Normal Radar // Refresh]\n',
+    '\n[Revert]\n',
+    '\n[Back]\n'
 }, nil, 'Powered by Mio Loader™.')
 if RD == 1 then nr() end
 if RD == 2 then rv() end
@@ -26,9 +26,9 @@ end
 MIO=1
 function dr()
   DR=gg.choice({
-    '[Medium]',
-    '[High]',
-    '[Back]'
+    '\n[Medium]\n',
+    '\n[High]\n',
+    '\n[Back]\n'
 }, nil, 'Powered by Mio Loader™.')
 if DR == 1 then dm() end
 if DR == 2 then dh() end
@@ -49,7 +49,7 @@ ze ={{['memory']=32},
 {['lv']=0,['offset']=0x19,['type']=4},}
 zen ={{['value']=1,['offset']=0x18,['type']=4,['freeze']=true},}
 xzn(ze)
-gg.toast('Radar Activated')
+gg.toast('Activated')
 end
 
 function dm()
@@ -80,7 +80,7 @@ gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1054071526', gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('Drone Activated!')
+gg.toast('Activated')
 end
 
 function dh()
@@ -111,14 +111,14 @@ gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1049926234', gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('Drone Activated!')
+gg.toast('Activated')
 end
 
 -- Text
 function rv()
 t = gg.getListItems()
 gg.removeListItems(t)
-gg.toast('Value Reverted')
+gg.toast('Reverted')
 end
 
 while true do

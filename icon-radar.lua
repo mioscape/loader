@@ -2,9 +2,9 @@
 MIO=1
 function START()
   ST=gg.choice({
-    '\n[Radar 美緒]\n',
-    '\n[Drone 美緒]\n',
-}, nil, '[MLBB Icon Radar // Made By Mioscape with 💖!]\n\nv3.2stable')
+    '\n\n[Radar 美緒]\n\n',
+    '\n\n[Drone 美緒]\n\n',
+}, nil, '[Icon Radar v3.3stable | Made By Mioscape with 💖]')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 MIO=-1
@@ -13,10 +13,10 @@ end
 MIO=1
 function rd()
   RD=gg.choice({
-    '\n[Icon Radar]\n',
-    '\n[Revert]\n',
-    '\n[Back]\n'
-}, nil, 'Powered by Mio Loader™.')
+    '\n\n[Icon Radar]\n\n',
+    '\n\n[Revert]\n\n',
+    '\n\n[Back]\n\n'
+}, nil, 'Powered by Mio Loader™')
 if RD == 1 then ir() end
 if RD == 2 then rr() end
 if RD == 3 then START() end
@@ -26,10 +26,10 @@ end
 MIO=1
 function dr()
   DR=gg.choice({
-    '\n[Medium]\n',
-    '\n[High]\n',
-    '\n[Back]\n'
-}, nil, 'Powered by Mio Loader™.')
+    '\n\n[Medium]\n\n',
+    '\n\n[High]\n\n',
+    '\n\n[Back]\n\n'
+}, nil, 'Powered by Mio Loader™')
 if DR == 1 then dm() end
 if DR == 2 then dh() end
 if DR == 3 then START() end
@@ -53,7 +53,7 @@ gg.refineNumber('0', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 local t = gg.getResults(100)
 for i, v in ipairs(t) do
 if v.flags == gg.TYPE_DWORD then
-  v.value = '10'
+  v.value = '5'
   v.freeze = true
  end
 end
@@ -91,7 +91,7 @@ gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1054071526', gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('Activated!')
+gg.toast('Activated')
 end
 
 function dh()
@@ -122,7 +122,7 @@ gg.searchNumber('-1057761526', gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll('-1049926234', gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('Activated!')
+gg.toast('Activated')
 end
 
 while true do

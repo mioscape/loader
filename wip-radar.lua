@@ -3,7 +3,7 @@ MIO=1
 function START()
   ST=gg.choice({
     '\n[Radar 美緒]\n',
-}, nil, '[WIP Radar v0.1alpha | Made By Mioscape with 💖]')
+}, nil, '[WIP Radar v0.1.0355-alpha | Made By Mioscape with 💖]')
 if ST == 1 then rd() end
 MIO=-1
 end
@@ -13,11 +13,13 @@ function rd()
   RD=gg.choice({
     '\n[Jungle]\n',
     '\n[Icon]\n',
+    '\n[Revert]\n',
     '\n[Back]\n'
-}, nil, '\n')
+}, nil, '')
 if RD == 1 then ta() end
 if RD == 2 then tb() end
-if RD == 3 then START() end
+if RD == 3 then rv() end
+if RD == 4 then START() end
 MIO=-1
 end
 
@@ -57,6 +59,13 @@ function tb()
   t = nil
   gg.clearResults()
   gg.toast('Activated')
+end
+
+function rv()
+t = gg.getListItems()
+gg.removeListItems(t)
+gg.clearResults()
+gg.toast('Reverted')
 end
 
 while true do

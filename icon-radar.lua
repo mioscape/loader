@@ -2,9 +2,9 @@
 MIO=1
 function START()
   ST=gg.choice({
-    '\n\n[Radar 美緒]\n\n',
-    '\n\n[Drone 美緒]\n\n',
-}, nil, '[Icon Radar v3.3stable | Made By Mioscape with 💖]')
+    '\n[Radar 美緒]\n',
+    '\n[Drone 美緒]\n',
+}, nil, '[Icon Radar v3.4stable | Made By Mioscape with 💖]')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 MIO=-1
@@ -13,10 +13,10 @@ end
 MIO=1
 function rd()
   RD=gg.choice({
-    '\n\n[Icon Radar]\n\n',
-    '\n\n[Revert]\n\n',
-    '\n\n[Back]\n\n'
-}, nil, 'Powered by Mio Loader™')
+    '\n[Icon Radar]\n',
+    '\n[Revert]\n',
+    '\n[Back]\n'
+}, nil, '\n')
 if RD == 1 then ir() end
 if RD == 2 then rr() end
 if RD == 3 then START() end
@@ -26,10 +26,10 @@ end
 MIO=1
 function dr()
   DR=gg.choice({
-    '\n\n[Medium]\n\n',
-    '\n\n[High]\n\n',
-    '\n\n[Back]\n\n'
-}, nil, 'Powered by Mio Loader™')
+    '\n[Medium]\n',
+    '\n[High]\n',
+    '\n[Back]\n'
+}, nil, '\n')
 if DR == 1 then dm() end
 if DR == 2 then dh() end
 if DR == 3 then START() end

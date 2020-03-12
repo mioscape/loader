@@ -2,15 +2,17 @@
 MIO=1
 function START()
   ST=gg.choice({
-    '\n\n[MLBB // Icon Radar]\n\n',
-    '\n\n[MLBB // Normal Radar]\n\n',
-}, nil, '[Mio Loader™ v3.3 | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
-if ST == 1 then ims() end
-if ST == 2 then nrs() end
+    '\n[MLBB // Icon Radar]\n',
+    '\n[MLBB // Normal Radar]\n',
+    '\n[MLBB // WIP Radar]\n',
+}, nil, '[Mio Loader™ v3.4 | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
+if ST == 1 then ab() end
+if ST == 2 then cd() end
+if ST == 3 then ef() end
 MIO=-1
 end
 
-function ims()
+function ab()
   TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/icon-radar.lua').content
   if not TG then
   os.exit()
@@ -19,8 +21,17 @@ function ims()
   end
 end
 
-function nrs()
+function cd()
   TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/normal-radar.lua').content
+  if not TG then
+  os.exit()
+  else
+  pcall(load(TG))
+  end
+end
+
+function ef()
+  TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/wip-radar.lua').content
   if not TG then
   os.exit()
   else

@@ -2,10 +2,10 @@
 MIO=1
 function START()
   ST=gg.choice({
-    '\n[MLBB // Icon Radar]\n',
-    '\n[MLBB // Normal Radar]\n',
-    '\n[MLBB // WIP Radar]\n',
-}, nil, '[Mio Loader™ v3.4 | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
+    '\n[MLBB | Icon Radar | stable]\n',
+    '\n[MLBB | Normal Radar | discontinued]\n',
+    '\n[MLBB | WIP Radar | alpha]\n',
+}, nil, '[Mio Loader™ v3.4-1 | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end

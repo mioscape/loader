@@ -4,7 +4,7 @@ function START()
     '\n[MLBB | Icon]\n',
     '\n[MLBB | WIP]\n',
     '\n[NFS:NL | WIP]\n',
-}, nil, '[Mio Loader™ v3.5-stable | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
+}, nil, '[Mio Loader™ v3.5+1-stable | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end
@@ -30,7 +30,7 @@ function cd()
 end
 
 function ef()
-  TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/nfsnl/wip.lua').content
+  TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/nfsnl/beta.lua').content
   if not TG then
   os.exit()
   else

@@ -1,10 +1,9 @@
--- mioscape
 MIO=1
 function START()
   ST=gg.choice({
     '\n[Radar 美緒]\n',
     '\n[Drone 美緒]\n',
-}, nil, '[MLBB Normal Radar // Made By Mioscape with 💖!]\n\nv0.48-01032020alpha-discontinuedforawhile')
+}, nil, '[MLBB Normal Radar | Made By Mioscape with 💖!]\n\nv0.48-01032020alpha-discontinuedforawhile')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 MIO=-1
@@ -13,7 +12,7 @@ end
 MIO=1
 function rd()
   RD=gg.choice({
-    '\n[Normal Radar // Refresh]\n',
+    '\n[Normal Radar | Refresh]\n',
     '\n[Revert]\n',
     '\n[Back]\n'
 }, nil, 'Powered by Mio Loader™.')

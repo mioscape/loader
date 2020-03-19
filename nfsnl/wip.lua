@@ -4,7 +4,7 @@ function START()
     '\n[Unlock Car]\n',
     '\n[Money]\n',
     '\n[Gold]\n',
-}, nil, '[NFS:NL WIP v0.10.0027-alpha | Made By Mioscape with 💖]')
+}, nil, '[NFS:NL WIP v0.13.0032-alpha | Made By Mioscape with 💖]')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end
@@ -13,7 +13,7 @@ end
 
 function ab()
   gg.processPause()
-  gg.setRanges(gg.REGION_JAVA_HEAP, gg.REGION_C_ALLOC, gg.REGION_ANONYMOUS)
+  gg.setRanges(gg.REGION_JAVA_HEAP | gg.REGION_C_ALLOC | gg.REGION_ANONYMOUS)
   gg.clearResults()
   gg.searchNumber('0;327700~327710;24~26::9', gg.TYPE_DWORD)
   gg.refineNumber('0', gg.TYPE_DWORD)
@@ -30,7 +30,7 @@ end
 
 function ef()
   gg.processPause()
-  gg.setRanges(gg.REGION_JAVA_HEAP, gg.REGION_C_ALLOC, gg.REGION_ANONYMOUS)
+  gg.setRanges(gg.REGION_JAVA_HEAP | gg.REGION_C_ALLOC | gg.REGION_ANONYMOUS)
   data = gg.prompt({[1]='Your Gold-1 (Change * to your Gold)', [2]='Your Gold-2', [3]='Change Gold'}, {[1]='*;327680~327699::5', [2]='', [3]=''})
   gg.searchNumber(data[1], gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.refineNumber(data[2], gg.TYPE_DWORD)

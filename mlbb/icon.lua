@@ -1,10 +1,9 @@
--- mioscape
 MIO=1
 function START()
   ST=gg.choice({
     '\n[Radar 美緒]\n',
     '\n[Drone 美緒]\n',
-}, nil, '[Icon Radar v3.4stable | Made By Mioscape with 💖]')
+}, nil, '[Icon Radar v3.4+1-stable | Made By Mioscape with 💖]')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 MIO=-1

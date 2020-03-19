@@ -3,7 +3,7 @@ function START()
   ST=gg.choice({
     '\n[MLBB | Icon]\n',
     '\n[MLBB | WIP]\n',
-    '\n[NFS:NL | WIP]\n',
+    '\n[NFS:NL]\n',
 }, nil, '[Mio Loader™ v3.5+1-stable | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 if ST == 1 then ab() end
 if ST == 2 then cd() end

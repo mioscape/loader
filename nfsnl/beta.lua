@@ -4,7 +4,7 @@ function START()
     '\n[Unlock Car]\n',
     '\n[Money]\n',
     '\n[Gold]\n',
-}, nil, '[NFS:NL v0.3-beta | Made By Mioscape with 💖]')
+}, nil, '[NFS:NL v0.3+4-beta | Made By Mioscape with 💖]')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end
@@ -31,7 +31,7 @@ function cd()
   gg.searchNumber(mio[1]..';327680~327699::5', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.refineNumber(mio[1], gg.TYPE_DWORD)
   gg.getResults(100)
-  gg.editAll(mio[3], gg.TYPE_DWORD)
+  gg.editAll(mio[2], gg.TYPE_DWORD)
   gg.processResume()
   gg.toast('Money Changed')
 end
@@ -43,7 +43,7 @@ function ef()
   gg.searchNumber(mio[1]..';327680~327699::5', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.refineNumber(mio[1], gg.TYPE_DWORD)
   gg.getResults(100)
-  gg.editAll(mio[3], gg.TYPE_DWORD)
+  gg.editAll(mio[2], gg.TYPE_DWORD)
   gg.processResume()
   gg.toast('Gold Changed')
 end

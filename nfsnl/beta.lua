@@ -4,7 +4,7 @@ function START()
     '\n[Unlock Car]\n',
     '\n[Money]\n',
     '\n[Gold]\n',
-}, nil, '[NFS:NL WIP v0.16.0039-alpha | Made By Mioscape with 💖]')
+}, nil, '[NFS:NL v0.1-beta | Made By Mioscape with 💖]')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end
@@ -25,7 +25,15 @@ function ab()
 end
 
 function cd()
-  gg.Toast('Under Development')
+  gg.processPause()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  data = gg.prompt({[1]='Your Money-1 (Change * to your Money)', [2]='Your Money-2', [3]='Change Money'}, {[1]='*;327680~327699::5', [2]='', [3]=''})
+  gg.searchNumber(data[1], gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber(data[2], gg.TYPE_DWORD)
+  gg.getResults(100)
+  gg.editAll(data[3], gg.TYPE_DWORD)
+  gg.processResume()
+  gg.Toast('Money Changed')
 end
 
 function ef()

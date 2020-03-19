@@ -1,4 +1,4 @@
-gg.setRanges(gg.REGION_JAVA_HEAP, REGION_C_HEAP, REGION_C_ALLOC, REGION_C_DATA, REGION_C_BSS, REGION_PPSSPP, gg.REGION_ANONYMOUS)
+gg.setRanges(gg.REGION_JAVA_HEAP, gg.REGION_C_ALLOC, gg.REGION_ANONYMOUS)
 gg.skipRestoreState()
 MIO=1
 function START()
@@ -6,7 +6,7 @@ function START()
     '\n[Unlock Car]\n',
     '\n[Money]\n',
     '\n[Gold]\n',
-}, nil, '[NFS:NL WIP v0.7.0014-alpha | Made By Mioscape with 💖]')
+}, nil, '[NFS:NL WIP v0.8.0014-alpha | Made By Mioscape with 💖]')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end

@@ -11,5 +11,10 @@ There are two games in my project, namely:
     - Unlock Cars
     - Money
     - Gold
+- Slither.io
+    - Perfect Handling
+    - Speed Hack
+    - Extend Table Score to 20
+    - Score Hack
 
-## // by Mioscape
+### // by Mioscape

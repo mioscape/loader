@@ -4,10 +4,12 @@ function START()
     '\n[MLBB | Icon]\n',
     '\n[MLBB | WIP]\n',
     '\n[NFS:NL]\n',
-}, nil, '[Mio Loader™ v3.5+3-stable | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
+    '\n[Slither.io]\n',
+}, nil, '[Mio Loader™ v3.5+4-stable | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end
+if ST == 4 then gh() end
 MIO=-1
 end
 
@@ -31,6 +33,15 @@ end
 
 function ef()
   TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/nfsnl/stable.lua').content
+  if not TG then
+  os.exit()
+  else
+  pcall(load(TG))
+  end
+end
+
+function gh()
+  TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/slitherio/alpha.lua').content
   if not TG then
   os.exit()
   else

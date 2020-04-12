@@ -5,12 +5,10 @@ function START()
     '\n[Unlock Cars]\n',
     '\n[Money]\n',
     '\n[Gold]\n',
-    '\n[Material Amount]\n',
-}, nil, '[NFS:NL v1.4+2-stable | Made By Mioscape with 💖]')
+}, nil, '[NFS:NL v1.6+7-stable | Made By Mioscape with 💖]')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end
-if ST == 4 then gh() end
 MIO=-1
 end
 
@@ -48,17 +46,6 @@ function ef()
   gg.clearResults()
   gg.processResume()
   gg.toast('Gold Changed')
-end
-
-function gh()
-  gg.processPause()
-  mio = gg.prompt({[1]='Your Material Amount:', [2]='Change Material Amount:'}, {[1]='', [2]=''})
-  gg.searchNumber(mio[1]..';327691;26;262144;2621443::21', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber(mio[1], gg.TYPE_DWORD)
-  gg.getResults(100)
-  gg.editAll(mio[2], gg.TYPE_DWORD)
-  gg.processResume()
-  gg.toast('Material Amount Changed')
 end
 
 while true do

@@ -4,9 +4,9 @@ function START()
   ST=gg.choice({
     '\n[Perfect Handling]\n',
     '\n[Speed Hack]\n',
-    '\n[Extend Table Score to 20]\n',
+    '\n[Change Leaderboard]\n',
     '\n[Score Hack]\n',
-}, nil, '[Slither.io v0.1+1-alpha | Made By Mioscape with 💖]')
+}, nil, '[Slither.io v0.3+7-alpha | Made By Mioscape with 💖]')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end
@@ -33,12 +33,12 @@ function cd()
 end
 
 function ef()
-  gg.clearResults()
+  mio = gg.prompt({[1]='Change Leaderboard to:'}, {[1]=''})
   gg.searchNumber("10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(500)
-  gg.editAll("20", gg.TYPE_DOUBLE)
+  gg.editAll(mio[1], gg.TYPE_DOUBLE)
   gg.clearResults()
-  gg.toast('Activated')
+  gg.toast('Leaderboard Changed to mio[1]')
 end
 
 function gh()

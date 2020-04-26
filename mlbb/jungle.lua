@@ -1,53 +1,84 @@
 MIO=1
-function START()
+function mioscape()
   ST=gg.choice({
-    '\n[Radar 美緒]\n',
-    '\n[Drone 美緒]\n',
-}, nil, '[MLBB Normal Radar | Made By Mioscape with 💖!]\n\nv0.48-01032020alpha-discontinuedforawhile')
+    '\n[  Radar  ]\n',
+    '\n[  Drone  ]\n',
+    '\n[  Exit  ]\n',
+}, nil, '[Jungle Radar v0.57+DirumahAja-alpha | Made By Mioscape with 💖]')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
+if ST == 3 then qu() end
 MIO=-1
 end
 
 MIO=1
 function rd()
   RD=gg.choice({
-    '\n[Normal Radar | Refresh]\n',
-    '\n[Revert]\n',
-    '\n[Back]\n'
+    '\n[  Normal Radar | Tim Atas   ]\n',
+    '\n[  Normal Radar | Tim Bawah  ]\n',
+    '\n[  Revert  ]\n',
+    '\n[  Back  ]\n'
 }, nil, 'Powered by Mio Loader™.')
-if RD == 1 then nr() end
-if RD == 2 then rv() end
-if RD == 3 then START() end
+if RD == 1 then ta() end
+if RD == 2 then tb() end
+if RD == 3 then rv() end
+if RD == 4 then mioscape() end
 MIO=-1
 end
 
 MIO=1
 function dr()
   DR=gg.choice({
-    '\n[Medium]\n',
-    '\n[High]\n',
-    '\n[Back]\n'
+    '\n[  Medium  ]\n',
+    '\n[  High  ]\n',
+    '\n[  Back  ]\n'
 }, nil, 'Powered by Mio Loader™.')
 if DR == 1 then dm() end
 if DR == 2 then dh() end
-if DR == 3 then START() end
+if DR == 3 then mioscape() end
 MIO=-1
 end
 
--- Code
-function nr()
-function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplitIndex = 1 local nSplitArray = {} while true do local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex) if not nFindLastIndex then nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString)) break end nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1) nFindStartIndex = nFindLastIndex + string.len(szSeparator) nSplitIndex = nSplitIndex + 1 end return nSplitArray end
-function xgxc(szpy, zen) for x = 1, #(zen) do xgpy = szpy + zen[x]['offset'] xglx = zen[x]['type'] xgsz = zen[x]['value'] xgdj = zen[x]['freeze'] if xgdj == nil or xgdj == '' then gg.setValues({[1] = {address = xgpy, flags = xglx, value = xgsz}}) else gg.addListItems({[1] = {address = xgpy, flags = xglx, freeze = xgdj, value = xgsz}}) end xgsl = xgsl + 1 xgjg = true end end
-function xzn(ze) gg.clearResults() gg.setRanges(ze[1]['memory']) gg.searchNumber(ze[3]['value'], ze[3]['type']) if gg.getResultCount() == 0 then gg.toast(ze[2]['name'] .. 'Success') else gg.refineNumber(ze[3]['value'], ze[3]['type']) gg.refineNumber(ze[3]['value'], ze[3]['type']) gg.refineNumber(ze[3]['value'], ze[3]['type']) if gg.getResultCount() == 0 then gg.toast(ze[2]['name'] .. 'Success') else sl = gg.getResults(999999) sz = gg.getResultCount() xgsl = 0 if sz > 999999 then sz = 999999 end for i = 1, sz do pdsz = true for v = 4, #(ze) do if pdsz == true then pysz = {} pysz[1] = {} pysz[1].address = sl[i].address + ze[v]['offset'] pysz[1].flags = ze[v]['type'] szpy = gg.getValues(pysz) pdpd = ze[v]['lv'] .. ';' .. szpy[1].value szpd = split(pdpd, ';') tzszpd = szpd[1] pyszpd = szpd[2] if tzszpd == pyszpd then pdjg = true pdsz = true else pdjg = false pdsz = false end end end if pdjg == true then szpy = sl[i].address xgxc(szpy, zen) end end if xgjg == true then gg.toast(ze[2]['name'] .. 'Radar ON') else gg.toast(ze[2]['name'] .. 'Success') end end end end
 
-ze ={{['memory']=32},
-{['name']=''},
-{['value']=2.53125,['type']=16},
-{['lv']=2.3693558e-38,['offset']=0x4,['type']=16},
-{['lv']=0,['offset']=0x19,['type']=4},}
-zen ={{['value']=1,['offset']=0x18,['type']=4,['freeze']=true},}
-xzn(ze)
+function rv()
+t = gg.getListItems()
+gg.removeListItems(t)
+gg.toast('Reverted')
+end
+
+function ta()
+gg.clearResults()
+gg.searchNumber('256D;1D;0D;0D;0D;0D::21', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.processResume()
+gg.refineNumber('1', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+local t = gg.getResults(100)
+for i, v in ipairs(t) do
+if v.flags == gg.TYPE_DWORD then
+  v.value = '1'
+  v.freeze = true
+ end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+gg.toast('Activated')
+end
+
+function tb()
+gg.clearResults()
+gg.searchNumber('256D;2D;0D;0D;0D;0D::21', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.processResume()
+gg.refineNumber('2', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+local t = gg.getResults(100)
+for i, v in ipairs(t) do
+if v.flags == gg.TYPE_DWORD then
+  v.value = '2'
+  v.freeze = true
+ end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
 gg.toast('Activated')
 end
 
@@ -113,11 +144,8 @@ gg.clearResults()
 gg.toast('Activated')
 end
 
--- Text
-function rv()
-t = gg.getListItems()
-gg.removeListItems(t)
-gg.toast('Reverted')
+function qu()
+os.exit()
 end
 
 while true do
@@ -126,6 +154,6 @@ MIO = 1
 gg.setVisible(false)
 end
 if MIO == 1 then
-START()
+mioscape()
 end
 end

@@ -2,10 +2,11 @@ MIO=1
 function START()
   ST=gg.choice({
     '\n[MLBB | Icon]\n',
-    '\n[MLBB | WIP]\n',
+    '\n[MLBB | Jungle]\n',
     '\n[NFS:NL]\n',
     '\n[Slither.io]\n',
-}, nil, '[Mio Loader™ v3.5+4-stable | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
+    '\n[Exit]\n',
+}, nil, '[Mio Loader™ v3.6+1-stable | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end
@@ -23,7 +24,7 @@ function ab()
 end
 
 function cd()
-  TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/mlbb/wip.lua').content
+  TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/mlbb/jungle.lua').content
   if not TG then
   os.exit()
   else

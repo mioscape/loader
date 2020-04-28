@@ -6,11 +6,12 @@ function START()
     '\n[NFS:NL]\n',
     '\n[Slither.io]\n',
     '\n[Exit]\n',
-}, nil, '[Mio Loader™ v3.6+1-stable | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
+}, nil, '[Mio Loader™ v3.6+3-stable | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end
 if ST == 4 then gh() end
+if ST == 5 then ij() end
 MIO=-1
 end
 
@@ -48,6 +49,10 @@ function gh()
   else
   pcall(load(TG))
   end
+end
+
+function ij()
+os.exit()
 end
 
 while true do

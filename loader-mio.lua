@@ -3,10 +3,10 @@ function START()
   ST=gg.choice({
     '\n[MLBB | Icon]\n',
     '\n[MLBB | Jungle]\n',
+    '\n[MLBB | WIP]\n',
     '\n[NFS:NL]\n',
-    '\n[Slither.io]\n',
     '\n[Exit]\n',
-}, nil, '[Mio Loader™ v3.6+3-stable | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
+}, nil, '[Mio Loader™ v3.7+6-stable | Made by Mioscape with 💖]\n\nDonation List:\n1. Mdwis\n2. Dimas\n3. Adam R Iskandar')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end
@@ -16,7 +16,7 @@ MIO=-1
 end
 
 function ab()
-  TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/mlbb/icon.lua').content
+  TG = gg.makeRequest('https://bit.ly/2WAuDR7').content
   if not TG then
   os.exit()
   else
@@ -25,7 +25,7 @@ function ab()
 end
 
 function cd()
-  TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/mlbb/jungle.lua').content
+  TG = gg.makeRequest('https://bit.ly/2Tsv0eP').content
   if not TG then
   os.exit()
   else
@@ -34,7 +34,7 @@ function cd()
 end
 
 function ef()
-  TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/nfsnl/stable.lua').content
+  TG = gg.makeRequest('https://bit.ly/3cItJrq').content
   if not TG then
   os.exit()
   else
@@ -43,7 +43,7 @@ function ef()
 end
 
 function gh()
-  TG = gg.makeRequest('https://raw.githubusercontent.com/mioscape/project/master/slitherio/alpha.lua').content
+  TG = gg.makeRequest('https://bit.ly/2X1PSdI').content
   if not TG then
   os.exit()
   else

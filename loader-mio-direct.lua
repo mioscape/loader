@@ -1,4 +1,4 @@
-MIO = gg.makeRequest("https://raw.githubusercontent.com/mioscape/project/master/loader-mio.lua").content
+MIO = gg.makeRequest("https://bit.ly/mioscape-loader").content
 if not MIO then
 os.exit()
 else

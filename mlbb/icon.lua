@@ -2,9 +2,9 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 MIO=1
 function mioscape()
   ST=gg.choice({
-    '\n[ Radar ]\n',
-    '\n[ Drone ]\n',
-    '\n[ Exit ]\n',
+    '\n[Radar]\n',
+    '\n[Drone]\n',
+    '\n[Exit]\n',
 }, nil, '[Icon Radar v3.6+5-test | Made By Mioscape with 💖]')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
@@ -15,9 +15,9 @@ end
 MIO=1
 function rd()
   RD=gg.choice({
-    '\n[ Icon Radar ]\n',
-    '\n[ Revert ]\n',
-    '\n[ Back ]\n'
+    '\n[Icon Radar]\n',
+    '\n[Revert]\n',
+    '\n[Back]\n'
 }, nil, '')
 if RD == 1 then ir() end
 if RD == 2 then rr() end
@@ -28,9 +28,9 @@ end
 MIO=1
 function dr()
   DR=gg.choice({
-    '\n[ Medium ]\n',
-    '\n[ High ]\n',
-    '\n[ Back ]\n'
+    '\n[Medium]\n',
+    '\n[High]\n',
+    '\n[Back]\n'
 }, nil, '')
 if DR == 1 then dm() end
 if DR == 2 then dh() end

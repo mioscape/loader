@@ -5,10 +5,12 @@ function START()
     '\n[Unlock Cars]\n',
     '\n[Money]\n',
     '\n[Gold]\n',
-}, nil, '[NFS:NL v1.6+7-stable | Made By Mioscape with 💖]')
+    '\n[Exit]\n',
+}, nil, '[NFS:NL v1.7+2-stable | Made By Mioscape with 💖]')
 if ST == 1 then ab() end
 if ST == 2 then cd() end
 if ST == 3 then ef() end
+if ST == 4 then ex() end
 MIO=-1
 end
 
@@ -46,6 +48,10 @@ function ef()
   gg.clearResults()
   gg.processResume()
   gg.toast('Gold Changed')
+end
+
+function ex()
+os.exit()
 end
 
 while true do

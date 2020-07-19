@@ -4,7 +4,7 @@ function mioscape()
     '\n[Radar]\n',
     '\n[Drone]\n',
     '\n[Exit]\n',
-}, nil, '[Icon Radar v3.7+1-test | Made By Mioscape with 💖]')
+}, nil, '[Icon Radar v0.1-alpha | Made By Mioscape with 💖]')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 if ST == 3 then qu() end

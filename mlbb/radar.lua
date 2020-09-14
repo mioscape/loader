@@ -4,7 +4,11 @@ function mioscape()
     '\n[Radar]\n',
     '\n[Drone]\n',
     '\n[Exit]\n',
+<<<<<<< HEAD:mlbb/radar.lua
 }, nil, '[Radar v0.1+1-alpha | Made By Mioscape with 💖]')
+=======
+}, nil, '[Icon Radar v0.1-alpha | Made By Mioscape with 💖]')
+>>>>>>> ac269c0159963bf1cdbc7fff66f6253eb58b5e1c:mlbb/icon.lua
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 if ST == 3 then qu() end

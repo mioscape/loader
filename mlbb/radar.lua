@@ -4,7 +4,7 @@ function mioscape()
     '\n[Radar]\n',
     '\n[Drone]\n',
     '\n[Exit]\n',
-}, nil, '[Radar v0.1+1-alpha | Made By Mioscape with 💖]')
+}, nil, '[Radar v0.2+1-alpha | Made By Mioscape with 💖]')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 if ST == 3 then qu() end
@@ -48,16 +48,14 @@ end
 function ir()
   gg.clearResults()
   gg.setRanges(gg.REGION_CODE_APP)
-  gg.searchNumber("h 00 65 43 B9 1F 14 00 71 20 03 00 54 1F 0C 00 71", gg.TYPE_BYTE)
+  gg.processResume()
+  gg.searchNumber("h 1F 04 00 71 C1 01 00 54 E0 03 00 32 C0 03 5F D6", gg.TYPE_BYTE)
   gg.getResults(100)
-  gg.editAll("h 00 68 43 B9 1F 14 00 71 21 03 00 54 1F 0C 00 71", gg.TYPE_BYTE)
-  gg.clearResults()
-  gg.searchNumber("h 00 65 43 B9 1F 14 00 71 21 03 00 54 1F 0C 00 71", gg.TYPE_BYTE)
-  gg.getResults(100)
-  gg.editAll("h 00 68 43 B9 1F 14 00 71 21 03 00 54 1F 0C 00 71", gg.TYPE_BYTE)
+  gg.editAll("h 1F 04 00 71 C2 01 00 54 E0 03 00 32 C0 03 5F D6", gg.TYPE_BYTE)
   gg.clearResults()
   gg.searchNumber("h F4 4F 41 A9 F6 57 C3 A8 C0 03 5F D6 00 10 6E 1E C0 03 5F D6 F6 57 BD A9 F4 4F 01 A9 FD 7B 02 A9", gg.TYPE_BYTE)
-  gg.searchNumber("h C0 03 5F D6 F6 57 BD A9 F4 4F 01 A9 FD 7B 02 A9", gg.TYPE_BYTE)
+  gg.processResume()
+  gg.refineNumber("h C0 03 5F D6 F6 57 BD A9 F4 4F 01 A9 FD 7B 02 A9", gg.TYPE_BYTE)
   gg.getResults(100)
   gg.editAll("h C0 03 5F D6 20 00 80 D2 C0 03 5F D6 FD 7B 02 A9", gg.TYPE_BYTE)
   gg.clearResults()

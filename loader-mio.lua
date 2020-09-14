@@ -10,7 +10,7 @@ MIO=-1
 end
 
 function ab()
-  TG = gg.makeRequest('https://bit.ly/2WAuDR7').content
+  TG = gg.makeRequest('https://github.com/mioscape/project/blob/master/mlbb/radar.lua').content
   if not TG then
   os.exit()
   else

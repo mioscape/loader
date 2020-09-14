@@ -4,7 +4,7 @@ function mioscape()
     '\n[Radar]\n',
     '\n[Drone]\n',
     '\n[Exit]\n',
-}, nil, '[Icon Radar v3.7+1-test | Made By Mioscape with 💖]')
+}, nil, '[Radar v0.1+1-alpha | Made By Mioscape with 💖]')
 if ST == 1 then rd() end
 if ST == 2 then dr() end
 if ST == 3 then qu() end
@@ -14,7 +14,7 @@ end
 MIO=1
 function rd()
   RD=gg.choice({
-    '\n[Icon Radar]\n',
+    '\n[Radar]\n',
     '\n[Revert]\n',
     '\n[Back]\n'
 }, nil, '')
